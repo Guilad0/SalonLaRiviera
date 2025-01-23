@@ -1,9 +1,15 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import ChatBot from "@/components/ChatBot.vue";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="">
+    <img
+      src="https://www.boliviaentusmanos.com/amarillas1/businesscard/imagenes/la-riviera-centro-de-eventos-y-convenciones-3.jpg"
+      alt=""
+      class="w-full"
+    />
+
+    <ChatBot />
+  </div>
 </template>
