@@ -107,9 +107,9 @@ export default {
           id: 1,
           category: 'matrimonios',
           title: 'Paquete Matrimonial Estandar',
-          description: 'Incluye decoración, catering y música básica.',
+          description: 'Incluye decoración, catering gourmet y DJ profesional o musica a elección.',
           price: 'Bs 185 por persona',
-          image: '@/assets/img/bodaEstandar.jpg',
+          image: 'src/assets/img/BodaEstandar.jpeg', 
         },
         {
           id: 2,
@@ -117,7 +117,7 @@ export default {
           title: 'Paquete Matrimonial Gold',
           description: 'Incluye decoración personalizada, catering gourmet y DJ profesional.',
           price: 'Bs 190 por persona',
-          image: '@/assets/img/boda2.jpg',
+          image: 'src/assets/img/BodaGold.jpeg', 
         },
         {
           id: 3,
@@ -125,7 +125,7 @@ export default {
           title: 'Paquete Quinceañera Estandar',
           description: 'Incluye decoración y salón con pista de baile.',
           price: 'Bs 150 por persona',
-          image: '@/assets/img/quince1.jpg',
+          image: 'src/assets/img/15Estandar.jpeg',
         },
         {
           id: 4,
@@ -133,7 +133,7 @@ export default {
           title: 'Paquete Quinceañera Gold',
           description: 'Decoración personalizada y menú especial.',
           price: 'Bs 170 por persona',
-          image: '@/assets/img/quince2.jpg',
+          image: 'src/assets/img/15Gold.jpeg',
         },
         {
           id: 5,
@@ -141,7 +141,7 @@ export default {
           title: 'Paquete Estandar',
           description: 'Decoración temática y juegos interactivos.',
           price: 'Bs 160 por persona',
-          image: '@/assets/img/cumple1.jpg',
+          image: 'src/assets/img/EPEstandar.jpeg',
         },
         {
           id: 6,
@@ -149,7 +149,7 @@ export default {
           title: 'Paquete Personalizado',
           description: 'Paquete personalizado para cualquier tipo de evento.',
           price: '$1000',
-          image: '@/assets/img/otros1.jpg',
+          image: 'src/assets/img/EventoEmpresa.jpeg',
         },
         {
           id: 7,
@@ -157,7 +157,7 @@ export default {
           title: 'Paquete Matrimonial Gold',
           description: 'Incluye decoración personalizada, catering gourmet y DJ profesional.',
           price: 'Bs 220 por persona',
-          image: '@/assets/img/boda2.jpg',
+          image: 'src/assets/img/BodaPlatinum.jpeg', 
         },
         {
           id: 8,
@@ -165,7 +165,7 @@ export default {
           title: 'Paquete Quinceañera Platinum',
           description: 'Decoración personalizada y menú especial.',
           price: 'Bs 190 por persona',
-          image: '@/assets/img/quince2.jpg',
+          image: 'src/assets/img/15Platinum.jpeg',
         },
         
         {
@@ -174,7 +174,7 @@ export default {
           title: 'Paquete Gold',
           description: 'Decoración temática y juegos interactivos.',
           price: 'Bs 180 por persona',
-          image: '@/assets/img/cumple1.jpg',
+          image: 'src/assets/img/EPGold.jpeg',
         },
         {
           id: 10,
@@ -182,7 +182,7 @@ export default {
           title: 'Paquete Platinum',
           description: 'Decoración temática y juegos interactivos.',
           price: 'Bs 210 por persona',
-          image: '@/assets/img/cumple1.jpg',
+          image: 'src/assets/img/EPPlatinum.jpeg',
         },
       ],
     };
