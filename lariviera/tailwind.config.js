@@ -10,6 +10,10 @@ module.exports = {
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
+      },
+      boxShadow: {
+        'text': '0 4px 6px rgba(0, 0, 0, 0.1)', 
+
       }
     },
   },

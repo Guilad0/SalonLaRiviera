@@ -1,16 +1,22 @@
 <script setup>
 import ChatBot from "@/components/ChatBot.vue";
+import { ref } from "vue";
+
+const showChat = ref(false);
 </script>
 
 <template>
   <div class="relative w-full h-screen">
     <div class="absolute inset-0">
-      <img src="@/assets/img/BAUTIZO.jpeg" alt="Hotel" class="w-full h-full opacity-80" />
+      <img src="@/assets/img/BAUTIZO.jpeg" alt="Hotel" class="w-full h-full opacity-60" />
     </div>
-    <div class="absolute left-0 right-0 p-8">
-      <p class="text-3xl font-bold mb-8 justify-center flex text-gray">
-        Nuestros Servicios
+    <div class="absolute left-0 right-0 p-8 opacity-90 flex flex-col">
+      <p
+        class="text-5xl font-bold mb-10 mt-10 justify-center flex text-gray-900 font-serif texts"
+      >
+        SALON DE EVENTOS LA RIVIERA
       </p>
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img src="@/assets/img/EpEstandar.jpeg" alt="" class="h-48 w-full" />
@@ -37,7 +43,13 @@ import ChatBot from "@/components/ChatBot.vue";
         </div>
       </div>
     </div>
-    <ChatBot />
+    <div>
+      <ChatBot />
+    </div>
   </div>
 </template>
-<style></style>
+<style>
+.texts {
+  text-shadow: 2px 10px 4px rgba(0, 0, 0, 0.5);
+}
+</style>
