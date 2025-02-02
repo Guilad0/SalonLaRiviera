@@ -33,16 +33,17 @@
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Brindis</p>
               <p class="text-justify italic">• Cerezer</p>
+              <p class="text-justify italic">• Galletas de Hojaldre</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Saladitos</p>
               <p class="text-justify italic">• Nachos c/palta</p>
+              <p class="text-justify italic">• Papas fitas - mani</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Montaje</p>
-              <p class="text-justify italic">• Cena un tipo de carne a elección</p>
-              <p class="text-justify italic">• Vajilla, cristalería.</p>
-              <p class="text-justify italic">• Cubertería.</p>
+              <p class="text-justify italic font-bold">Buffet</p>
+              <p class="text-justify italic">• Tres tipos de carne.</p>
+              <p class="text-justify italic">• Tres tipos de guarniciones</p>              
             </td>
           </tr>
           <!-- Fila 2 -->
@@ -57,6 +58,7 @@
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)</p>
               <p class="text-justify italic">• Gaseosas /hielo/limón/agua</p>
+              <p class="text-justify italic">• Jugos naturales</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Fondeu de chocolate</p>

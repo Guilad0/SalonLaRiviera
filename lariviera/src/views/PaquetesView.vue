@@ -28,21 +28,25 @@
             <!-- Botón para navegar a la vista bodaEstandar -->
             <router-link v-if="paquete.category === 'matrimonios' && paquete.title === 'Paquete Matrimonial Estandar'"
               :to="{ name: 'bodaEstandar', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
               Ver detalles
             </router-link>
+
 
             <!-- Botón para navegar a la vista bodaGold -->
             <router-link v-if="paquete.category === 'matrimonios' && paquete.title === 'Paquete Matrimonial Gold'"
               :to="{ name: 'bodaGold', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
               Ver detalles
             </router-link>
 
             <!-- Botón para navegar a la vista bodaPlatinum -->
             <router-link v-if="paquete.category === 'matrimonios' && paquete.title === 'Paquete Matrimonial Platinum'"
               :to="{ name: 'bodaPlatinum', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
               Ver detalles
             </router-link>
           </div>
@@ -65,21 +69,21 @@
             <!-- Botón para navegar a la vista quinceEstandar -->
             <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Estandar'"
               :to="{ name: 'quinceEstandar', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" @click="scrollToTop">
               Ver detalles
             </router-link>
 
             <!-- Botón para navegar a la vista quinceGold -->
             <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Gold'"
               :to="{ name: 'quinceGold', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" @click="scrollToTop">
               Ver detalles
             </router-link>
 
             <!-- Botón para navegar a la vista quincePlatinum -->
             <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Platinum'"
               :to="{ name: 'quincePlatinum', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" @click="scrollToTop">
               Ver detalles
             </router-link>
           </div>
@@ -128,7 +132,6 @@ export default {
     return {
       selectedCategory: 'matrimonios',
 
-
       categories: [
         { label: 'Matrimonios', value: 'matrimonios' },
         { label: 'Quince Años', value: 'quinceanos' },
@@ -141,7 +144,7 @@ export default {
           id: 1,
           category: 'matrimonios',
           title: 'Paquete Matrimonial Estandar',
-          description: 'Incluye decoración, catering gourmet y DJ profesional o musica a elección.',
+          description: 'Incluye decoración básica, catering gourmet y DJ profesional o música a elección. Una opción ideal para una boda sencilla pero especial.',
           price: 'Bs 185 por persona',
           image: 'src/assets/img/BodaEstandar.jpeg',
         },
@@ -149,7 +152,7 @@ export default {
           id: 2,
           category: 'matrimonios',
           title: 'Paquete Matrimonial Gold',
-          description: 'Incluye decoración personalizada, catering gourmet y DJ profesional.',
+          description: 'Ofrece decoración personalizada, un menú gourmet exclusivo y DJ profesional. Perfecto para quienes buscan un evento elegante.',
           price: 'Bs 190 por persona',
           image: 'src/assets/img/BodaGold.jpeg',
         },
@@ -157,7 +160,7 @@ export default {
           id: 3,
           category: 'quinceanos',
           title: 'Paquete Quinceañera Estandar',
-          description: 'Incluye decoración y salón con pista de baile.',
+          description: 'Incluye decoración clásica, salón con pista de baile y un menú especial. Una opción ideal para una celebración inolvidable.',
           price: 'Bs 150 por persona',
           image: 'src/assets/img/15Estandar.jpeg',
         },
@@ -165,7 +168,7 @@ export default {
           id: 4,
           category: 'quinceanos',
           title: 'Paquete Quinceañera Gold',
-          description: 'Decoración personalizada y menú especial.',
+          description: 'Ofrece decoración personalizada, menú gourmet y efectos especiales. Perfecto para una fiesta mágica y elegante.',
           price: 'Bs 170 por persona',
           image: 'src/assets/img/15Gold.jpeg',
         },
@@ -189,7 +192,7 @@ export default {
           id: 7,
           category: 'matrimonios',
           title: 'Paquete Matrimonial Platinum',
-          description: 'Incluye decoración personalizada, catering gourmet y DJ profesional.',
+          description: 'Brinda una decoración de lujo, catering gourmet de alto nivel y DJ profesional. La mejor opción para una boda inolvidable y sofisticada.',
           price: 'Bs 220 por persona',
           image: 'src/assets/img/BodaPlatinum.jpeg',
         },
@@ -197,11 +200,10 @@ export default {
           id: 8,
           category: 'quinceanos',
           title: 'Paquete Quinceañera Platinum',
-          description: 'Decoración personalizada y menú especial.',
+          description: 'Presenta una decoración exclusiva, catering premium y show en vivo. La mejor elección para un evento único y lujoso.',
           price: 'Bs 190 por persona',
           image: 'src/assets/img/15Platinum.jpeg',
         },
-
         {
           id: 9,
           category: 'eventosprivados',
@@ -226,7 +228,12 @@ export default {
     filteredPackages(categoria) {
       return this.paquetes.filter(paquete => paquete.category === categoria);
     },
-  },
+
+    // Función para mover el scroll hacia el principio de la página
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  }, // <-- Asegúrate de que no haya coma aquí
 };
 </script>
 

@@ -39,20 +39,20 @@
               <p class="text-justify italic">• Nachos c/palta</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Montaje</p>
-              <p class="text-justify italic">• Cena un tipo de carne a elección</p>
-              <p class="text-justify italic">• Vajilla, cristalería.</p>
-              <p class="text-justify italic">• Cubertería.</p>
+              <p class="text-justify italic font-bold">Plato Servido</p>
+              <p class="text-justify italic">• Cena dos tipos de carne a elección</p>
+              <p class="text-justify italic">• Dos guarniciones  a elección</p>
+              <p class="text-justify italic">• Dos ensaladas</p>
             </td>
           </tr>
           <!-- Fila 2 -->
           <tr>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Bebidas en mesa con alcohol (2)</p>
-              <p class="text-justify italic">• Singani Casa Real</p>
-              <p class="text-justify italic">• Ron Carta Vieja - Abuelo</p>
-              <p class="text-justify italic">• Ron Carta Vieja- Havana</p>
+              <p class="text-justify italic">• Whisky de litro. J.W/Old etq. Roja BALLANTAI</p>
+              <p class="text-justify italic">• Ron Catra Vieja</p>
               <p class="text-justify italic">• Ron Solera</p>
+              <p class="text-justify italic">• Casa real negro	</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)</p>
