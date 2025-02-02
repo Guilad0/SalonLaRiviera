@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center mt-8">
+  <div class="flex items-center justify-center mt-8 m-5 p-2.5">
     <h1 class="text-4xl md:text-4xl font-bold text-center">
       RESERVA UNA REUNIÓN INICIAL
     </h1>
@@ -16,7 +16,7 @@
 
     <!-- Contenido dinámico basado en la categoría seleccionada MATRIMONIOS -->
     <div v-if="selectedCategory === 'matrimonios'">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 m-5 p-2.5">
         <div v-for="paquete in filteredPackages('matrimonios')" :key="paquete.id"
           class="bg-white rounded-lg shadow-lg overflow-hidden">
           <img :src="paquete.image" alt="Imagen del paquete" class="w-full h-48 object-cover" />
