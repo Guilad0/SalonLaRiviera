@@ -63,21 +63,21 @@
             <p class="mt-4 text-blue-500 font-semibold">Precio: {{ paquete.price }}</p>
 
             <!-- Botón para navegar a la vista quinceEstandar -->
-            <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quince Años Estandar'"
+            <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Estandar'"
               :to="{ name: 'quinceEstandar', params: { id: paquete.id } }"
               class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
               Ver detalles
             </router-link>
 
             <!-- Botón para navegar a la vista quinceGold -->
-            <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quince Años Gold'"
+            <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Gold'"
               :to="{ name: 'quinceGold', params: { id: paquete.id } }"
               class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
               Ver detalles
             </router-link>
 
             <!-- Botón para navegar a la vista quincePlatinum -->
-            <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quince Años Platinum'"
+            <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Platinum'"
               :to="{ name: 'quincePlatinum', params: { id: paquete.id } }"
               class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
               Ver detalles
@@ -86,6 +86,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- Contenido dinámico basado en la categoría seleccionada EVENTOS PRIVADOS -->
 
@@ -102,6 +103,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Contenido dinámico basado en la categoría seleccionada OTROS -->
 
     <div v-if="selectedCategory === 'otros'">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
