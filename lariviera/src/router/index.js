@@ -7,6 +7,10 @@ import BodaPlatinumView from '@/views/BodaPlatinumView.vue'
 import QuinceEstandarView from '@/views/QuinceEstandarView.vue'
 import QuinceGoldView from '@/views/QuinceGoldView.vue'
 import QuincePlatinumView from '@/views/QuincePlatinumView.vue'
+import EventoPrivadoEstandarView from '@/views/EventoPrivadoEstandarView.vue'
+import EventoPrivadoGoldView from '@/views/EventoPrivadoGoldView.vue'
+import EventoPrivadoPlatinumView from '@/views/EventoPrivadoPlatinumView.vue'
+import OtrosView from '@/views/OtrosView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,7 +56,29 @@ const router = createRouter({
       path: '/quincePlatinum/:id', 
       name: 'quincePlatinum',
       component: QuincePlatinumView
-    },       
+    },    
+    {
+      path: '/evento-privado-estandar/:id',
+      name: 'EventoPrivadoEstandarView',
+      component: EventoPrivadoEstandarView
+    },
+    {
+      path: '/evento-privado-gold/:id',
+      name: 'EventoPrivadoGoldView',
+      component: EventoPrivadoGoldView
+    },
+    {
+      path: '/evento-privado-platinum/:id',
+      name: 'EventoPrivadoPlatinumView',
+      component: EventoPrivadoPlatinumView
+    },
+    {
+      path: '/otros/:id',
+      name: 'OtrosView',
+      component: OtrosView
+    },
+
+
   ]
 })
 

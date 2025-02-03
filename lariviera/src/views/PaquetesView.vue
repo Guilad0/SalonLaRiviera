@@ -69,21 +69,24 @@
             <!-- Botón para navegar a la vista quinceEstandar -->
             <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Estandar'"
               :to="{ name: 'quinceEstandar', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" @click="scrollToTop">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
               Ver detalles
             </router-link>
 
             <!-- Botón para navegar a la vista quinceGold -->
             <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Gold'"
               :to="{ name: 'quinceGold', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" @click="scrollToTop">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
               Ver detalles
             </router-link>
 
             <!-- Botón para navegar a la vista quincePlatinum -->
             <router-link v-if="paquete.category === 'quinceanos' && paquete.title === 'Paquete Quinceañera Platinum'"
               :to="{ name: 'quincePlatinum', params: { id: paquete.id } }"
-              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" @click="scrollToTop">
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
               Ver detalles
             </router-link>
           </div>
@@ -103,6 +106,30 @@
             <h3 class="text-lg font-bold mb-2">{{ paquete.title }}</h3>
             <p class="text-gray-600">{{ paquete.description }}</p>
             <p class="mt-4 text-blue-500 font-semibold">Precio: {{ paquete.price }}</p>
+            <!-- Botón para navegar a la vista EventoPrivadoEstandarView -->
+            <router-link v-if="paquete.category === 'eventosprivados' && paquete.title === 'Paquete Estandar'"
+              :to="{ name: 'EventoPrivadoEstandarView', params: { id: paquete.id } }"
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
+              Ver detalles
+            </router-link>
+
+            <!-- Botón para navegar a la vista EventoPrivadoGoldView -->
+            <router-link v-if="paquete.category === 'eventosprivados' && paquete.title === 'Paquete Gold'"
+              :to="{ name: 'EventoPrivadoGoldView', params: { id: paquete.id } }"
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
+              Ver detalles
+            </router-link>
+
+            <!-- Botón para navegar a la vista EventoPrivadoPlatinumView -->
+            <router-link v-if="paquete.category === 'eventosprivados' && paquete.title === 'Paquete Platinum'"
+              :to="{ name: 'EventoPrivadoPlatinumView', params: { id: paquete.id } }"
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
+              Ver detalles
+            </router-link>
+
           </div>
         </div>
       </div>
@@ -119,6 +146,14 @@
             <h3 class="text-lg font-bold mb-2">{{ paquete.title }}</h3>
             <p class="text-gray-600">{{ paquete.description }}</p>
             <p class="mt-4 text-blue-500 font-semibold">Precio: {{ paquete.price }}</p>
+            <!-- Botón para navegar a la vista OtrosView -->
+            <router-link v-if="paquete.category === 'otros' && paquete.title === 'Eventos de Empresa'"
+              :to="{ name: 'OtrosView', params: { id: paquete.id } }"
+              class="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              @click="scrollToTop">
+              Ver detalles
+            </router-link>
+
           </div>
         </div>
       </div>
@@ -183,11 +218,12 @@ export default {
         {
           id: 6,
           category: 'otros',
-          title: 'Paquete Personalizado',
+          title: 'Eventos de Empresa', // Aquí debe coincidir con el router-link
           description: 'Paquete personalizado para cualquier tipo de evento.',
           price: '$1000',
           image: 'src/assets/img/EventoEmpresa.jpeg',
         },
+
         {
           id: 7,
           category: 'matrimonios',
