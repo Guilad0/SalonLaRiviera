@@ -2,22 +2,23 @@
   <div class="m-5 p-2.5">
     <h1>Detalles del Paquete Platinum: {{ paqueteId }}</h1>
     <h2 class="text-justify italic">
-      "Querida quinceañera y familia,
+      <p><b>"Estimados anfitriones y familia,</b></p>
 
       Es un honor para nosotros ser parte de este momento tan especial en sus vidas. En nombre del <b>Salón de Eventos
         La Riviera</b>, nos especializamos en crear celebraciones inolvidables, cuidando cada detalle para que disfruten
       de una fiesta mágica y sin preocupaciones.
 
       A continuación, les presentamos nuestra propuesta de cotización, diseñada para adaptarse a sus necesidades y hacer
-      realidad la fiesta de quince años de sus sueños.
+      realidad la celebración de sus sueños.
 
-      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un honor acompañarlos en este día tan
+      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un placer acompañarlos en este día tan
       especial."
     </h2>
 
     <h3 class="underline">
       A continuación, detallamos los servicios y opciones incluidas en nuestra cotización, diseñados para cubrir todas
-      las necesidades de su fiesta de quince años y asegurar que sea un evento memorable.
+      las necesidades de su celebración, ya sea un cumpleaños, aniversario u otro evento social, asegurando que sea una
+      experiencia inolvidable.
     </h3>`
     <div>
       <table class="table-auto w-full border-collapse mt-4">
@@ -34,52 +35,82 @@
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Brindis</p>
               <p class="text-justify italic">• Cerezer</p>
+              <p class="text-justify italic">• Galletas de Hojaldre	
+              </p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Saladitos</p>
-              <p class="text-justify italic">• Pizzetas </p>
-              <p class="text-justify italic">• Brochetas de cerdo</p>
-              <p class="text-justify italic">• Tartaletas</p>
-              <p class="text-justify italic">• Albondigas</p>
+              <p class="text-justify italic">• Nachos c/palta
+              </p>
+              
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre) </p>
-              <p class="text-justify italic">• Gaseosas / agua/jugos</p>
+              <p class="text-justify italic font-bold">Plato Servido</p>
+              <p class="text-justify italic">• Cena tres tipos de carne a elección	
+              </p>
+              <p class="text-justify italic">• Bufé de ensaladas y guarniciones	
+              </p>
+              <p class="text-justify italic">• Una ensalada	
+              </p>
+              
             </td>
           </tr>
           <!-- Fila 2 -->
           <tr>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Montaje</p>
-              <p class="text-justify italic">• Mesas, sillas vestidas.</p>
-              <p class="text-justify italic">• Vajilla, cristalería.</p>
-              <p class="text-justify italic">• Cubertería.</p>
+              <p class="text-justify italic font-bold">Incluye</p>
+              <p class="text-justify italic">• Amplificación
+                </p>
+              <p class="text-justify italic">• Luces LED 	
+              </p>              
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Amplificación</p>
-              <p class="text-justify italic">• 4 tipos de luces.</p>
-              <p class="text-justify italic">• Maestro de ceremonia</p>
+              <p class="text-justify italic font-bold">Luminotecnia</p>
+              <p class="text-justify italic">• 25 puntos de luces LED	
+                </p>
+              <p class="text-justify italic">• Instalación y desinstalación de luces	
+              </p>
+              <p class="text-justify italic">• Controlador digital de luces	
+              </p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Personal de atención</p>
-              <p class="text-justify italic">• Coordinador de Eventos.</p>
-              <p class="text-justify italic">• Garzones</p>
-              <p class="text-justify italic">• Personal de seguridad</p>
-              <p class="text-justify italic">• Personal de limpieza durante todo el evento</p>
+              <p class="text-justify italic font-bold">Bebidas en mesa con alcohol (2 TRAGOS)	
+              </p>
+              <p class="text-justify italic">•  Whisky  J.W/Old etq. negro
+              </p>   
+              <p class="text-justify italic">•  Ron o/ Fernet	
+              </p>
+              <p class="text-justify italic">•  Singani / casa resal negro	
+              </p>    
+                    
             </td>
           </tr>
           <!-- Fila 3 -->
           <tr>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Fondeu de chocolate</p>
-              <p class="text-justify italic">• Frutas de temporada</p>              
-              <p class="text-justify italic">• Mashmelos</p>
-              <p class="text-justify italic">• Detalles de chocolate</p>
+              <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)	
+              </p>
+              <p class="text-justify italic">• Gaseosas / agua/jugos	
+              </p> 
+              <p class="text-justify italic">• Jugos Naturales	
+              </p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Servicio de barman </p>
-              <p class="text-justify italic">• Forzzens</p>
-              <p class="text-justify italic">• Moctels</p>                            
+              <p class="text-justify italic font-bold">Montaje	
+              </p>
+              <p class="text-justify italic">• Mesas, sillas vestidas.	
+              </p>
+              <p class="text-justify italic">• Vajilla, cristalería.	
+              </p>
+              <p class="text-justify italic">• Cubertería.	
+              </p>
+            </td>
+            <td class="border px-4 py-2 text-left align-top">
+              <p class="text-justify italic font-bold">Personal de Atención
+              </p>
+              <p class="text-justify italic">• Coordinador de Eventos
+              </p>  
+              <p class="text-justify italic">Garzones</p>           
             </td>
           </tr>
         </tbody>
@@ -120,7 +151,7 @@ export default {
   data() {
     return {
       cantidad: 0, // Comienza con 0
-      precioUnitario: 190 // Precio de ejemplo
+      precioUnitario: 210 // Precio de ejemplo
     };
   },
   computed: {
