@@ -1,23 +1,25 @@
 <template>
   <div class="m-5 p-2.5">
-    <h1>Detalles del Paquete Platinum: {{ paqueteId }}</h1>
+    <h1>Detalles del Eventos de Empresa: {{ paqueteId }}</h1>
     <h2 class="text-justify italic">
-      "Querida quinceañera y familia,
+      <p><b>"Estimados organizadores y equipo,</b></p>
 
-      Es un honor para nosotros ser parte de este momento tan especial en sus vidas. En nombre del <b>Salón de Eventos
-        La Riviera</b>, nos especializamos en crear celebraciones inolvidables, cuidando cada detalle para que disfruten
-      de una fiesta mágica y sin preocupaciones.
+      Es un honor para nosotros ser parte de su próximo evento. En nombre del <b>Salón de Eventos
+        La Riviera</b>, nos especializamos en crear experiencias memorables, brindando un servicio impecable y cuidando
+      cada detalle para garantizar el éxito de su reunión.
 
       A continuación, les presentamos nuestra propuesta de cotización, diseñada para adaptarse a sus necesidades y hacer
-      realidad la fiesta de quince años de sus sueños.
+      de su evento corporativo, seminario o disertación una experiencia profesional y enriquecedora.
 
-      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un honor acompañarlos en este día tan
-      especial."
+      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un placer acompañarlos en la organización
+      de este importante encuentro."
     </h2>
 
     <h3 class="underline">
+
       A continuación, detallamos los servicios y opciones incluidas en nuestra cotización, diseñados para cubrir todas
-      las necesidades de su fiesta de quince años y asegurar que sea un evento memorable.
+      las necesidades de su evento empresarial, seminario o disertación, garantizando una experiencia profesional y
+      exitosa.
     </h3>`
     <div>
       <table class="table-auto w-full border-collapse mt-4">
@@ -32,56 +34,55 @@
           <!-- Fila 1 -->
           <tr>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Brindis</p>
-              <p class="text-justify italic">• Cerezer</p>
+              <p class="text-justify italic font-bold">REQURIMENTO DE SALÓN</p>
+              <p class="text-justify italic">♦ SALÓN AMPLIO AIRE ACONDICIONADO
+              </p>
+              <p class="text-justify italic">♦ 500 SILLAS TIFFANY
+              </p>
+              <p class="text-justify italic">♦ MESAS DE APOYO
+              </p>
+              <p class="text-justify italic">♦ ACCESO A BAÑOS EQUIPADOS
+              </p>
+              <p class="text-justify italic">♦ AREAS DE JARDIN PARA DESCANSO
+              </p>
             </td>
+
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Saladitos</p>
-              <p class="text-justify italic">• Pizzetas </p>
-              <p class="text-justify italic">• Brochetas de cerdo</p>
-              <p class="text-justify italic">• Tartaletas</p>
-              <p class="text-justify italic">• Albondigas</p>
-            </td>
-            <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre) </p>
-              <p class="text-justify italic">• Gaseosas / agua/jugos</p>
+              <p class="text-justify italic font-bold">Bs 2000 </p>
+
             </td>
           </tr>
           <!-- Fila 2 -->
           <tr>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Montaje</p>
-              <p class="text-justify italic">• Mesas, sillas vestidas.</p>
-              <p class="text-justify italic">• Vajilla, cristalería.</p>
-              <p class="text-justify italic">• Cubertería.</p>
+              <p class="text-justify italic font-bold">HERRAMIENTAS AUDIOVISUALES</p>
+              <p class="text-justify italic">♦ PANTALLA LED
+              </p>
+              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS
+              </p>
+              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS
+              </p>
             </td>
+
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Amplificación</p>
-              <p class="text-justify italic">• 4 tipos de luces.</p>
-              <p class="text-justify italic">• Maestro de ceremonia</p>
-            </td>
-            <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Personal de atención</p>
-              <p class="text-justify italic">• Coordinador de Eventos.</p>
-              <p class="text-justify italic">• Garzones</p>
-              <p class="text-justify italic">• Personal de seguridad</p>
-              <p class="text-justify italic">• Personal de limpieza durante todo el evento</p>
+              <p class="text-justify italic font-bold">Bs 1800 </p>
+
             </td>
           </tr>
           <!-- Fila 3 -->
-          <tr>
+          <!-- <tr>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Fondeu de chocolate</p>
-              <p class="text-justify italic">• Frutas de temporada</p>              
+              <p class="text-justify italic">• Frutas de temporada</p>
               <p class="text-justify italic">• Mashmelos</p>
               <p class="text-justify italic">• Detalles de chocolate</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Servicio de barman </p>
               <p class="text-justify italic">• Forzzens</p>
-              <p class="text-justify italic">• Moctels</p>                            
+              <p class="text-justify italic">• Moctels</p>
             </td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </div>
@@ -102,7 +103,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>Paquete Platinum</td>
+          <td>Eventos de Empresa</td>
           <td>
             <input type="number" v-model="cantidad" min="0" class="input-cantidad" />
           </td>
