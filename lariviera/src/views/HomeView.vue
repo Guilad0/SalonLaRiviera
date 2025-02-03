@@ -1,54 +1,49 @@
 <script setup>
 import ChatBot from "@/components/ChatBot.vue";
-import { ref } from "vue";
-
-const showChat = ref(false);
+import Carrusel from "@/components/Carrusel.vue";
+import CardPaquetes from "@/components/CardPaquetes.vue";
 </script>
 
 <template>
-  <div class="relative w-full h-screen">
-    <div class="absolute inset-0">
-      <img src="@/assets/img/BAUTIZO.jpeg" alt="Hotel" class="w-full h-full opacity-60" />
-    </div>
-    <div class="absolute left-0 right-0 p-8 opacity-90 flex flex-col">
-      <p
-        class="text-5xl font-bold mb-10 mt-10 justify-center flex text-gray-900 font-serif texts"
-      >
-        SALON DE EVENTOS LA RIVIERA
-      </p>
+  <div class="flex flex-col w-full">
+    <div class="relative w-full h-screen flex items-center justify-center">
+      <img
+        src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738349297/EPPlatinum_rajo51.jpg"
+        alt="home"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="@/assets/img/EpEstandar.jpeg" alt="" class="h-48 w-full" />
-          <h3 class="text-xl font-bold">15 años</h3>
-          <p class="text-gray-600">190 Bs por persona</p>
-          <p>
-            El paquete Gold incluye: Decoracion personalizada, catering gourmet y DJ
-            profesional
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="@/assets/img/EPGold.jpeg" alt="" class="h-48 w-full" />
-          <h3 class="text-xl font-bold">Matrimonios</h3>
-          <p class="text-gray-600">
-            Disfruta de una deliciosa gastronomía en nuestro restaurante.
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="@/assets/img/EPPlatinum.jpeg" alt="" class="h-48 w-full" />
-          <h3 class="text-xl font-bold">Varios</h3>
-          <p class="text-gray-600">
-            Relájate y renueva energías en nuestro exclusivo spa.
-          </p>
-        </div>
-      </div>
+      <p
+        class="absolute text-6xl font-extrabold text-neutral-300 font-serif texts text-center bg-opacity-80 w-96 right-40 border-4 border-slate-200"
+      >
+        SALÓN DE EVENTOS LA RIVIERA
+      </p>
+      <img
+        src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
+        alt=""
+        class="h-96 mr-2 absolute left-10 rounded-full border-4 border-slate-900"
+      />
     </div>
-    <div>
-      <ChatBot />
+
+    <div
+      class="flex flex-col items-center w-full min-h-screen p-10 bg-[url('https://tse1.mm.bing.net/th?id=OIP.OMMDkfl_J-LWobPesGotnQHaFb&pid=Api')] bg-center"
+    >
+      <div class="w-full max-w-4xl">
+        <Carrusel class="w-full shadow-lg rounded-none" />
+      </div>
+
+      <div class="w-full max-w-4xl mt-10">
+        <CardPaquetes />
+      </div>
+
+      <div class="w-full max-w-4xl mt-10">
+        <ChatBot />
+      </div>
     </div>
   </div>
 </template>
-<style>
+
+<style scoped>
 .texts {
   text-shadow: 2px 10px 4px rgba(0, 0, 0, 0.5);
 }

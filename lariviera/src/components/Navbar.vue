@@ -1,8 +1,10 @@
 <template>
-  <nav class="bg-white-900 text-white p-4 flex justify-between items-center">
+  <nav
+    class="bg-neutral-200 text-white p-4 flex justify-between items-center font-serif text-lg"
+  >
     <div class="flex items-center">
       <img src="@/assets/img/EPgold.jpeg" alt="Logo" class="h-10 mr-2" />
-      <router-link to="/" class="text-lg font-bold text-black"
+      <router-link to="/" class="text-2xl font-bold font-serif text-black"
         >Salon de Eventos La Riviera</router-link
       >
     </div>
@@ -19,9 +21,9 @@
         <router-link to="/paquetes" class="hover:text-sky-700">Paquetes</router-link>
       </li>
     </ul>
-    <button class="bg-sky-700 hover:bg-gray-700 px-4 py-2 rounded text-white">
+    <!-- <button class="bg-sky-700 hover:bg-gray-700 px-4 py-2 rounded text-white">
       Reservar
-    </button>
+    </button> -->
   </nav>
 </template>
 
