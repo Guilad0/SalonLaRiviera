@@ -10,7 +10,7 @@ import CardPaquetes from "@/components/CardPaquetes.vue";
       <img
         src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738349297/EPPlatinum_rajo51.jpg"
         alt="home"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-cover opacity-90 bg-black"
       />
 
       <p
@@ -26,17 +26,22 @@ import CardPaquetes from "@/components/CardPaquetes.vue";
     </div>
 
     <div
-      class="flex flex-col items-center w-full min-h-screen p-10 bg-[url('https://tse1.mm.bing.net/th?id=OIP.OMMDkfl_J-LWobPesGotnQHaFb&pid=Api')] bg-center"
+      class="relative flex flex-col items-center w-full min-h-screen p-10 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1738768263/textura_LE_upscale_balanced_x4v2_fekn3r.jpg')] bg-cover"
     >
-      <div class="w-full max-w-4xl">
-        <Carrusel class="w-full shadow-lg rounded-none" />
-      </div>
-
-      <div class="w-full max-w-4xl mt-10">
+      <div class="relative w-full max-w-4xl mb-10">
+        <p
+          class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-neutral-400 text-neutral-500"
+        >
+          PAQUETES
+        </p>
         <CardPaquetes />
       </div>
 
-      <div class="w-full max-w-4xl mt-10">
+      <div class="relative w-full max-w-4xl">
+        <Carrusel class="w-full shadow-lg rounded-none" />
+      </div>
+
+      <div class="relative w-full max-w-4xl mt-10">
         <ChatBot />
       </div>
     </div>

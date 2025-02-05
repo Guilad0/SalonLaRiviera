@@ -1,5 +1,7 @@
 <template>
-  <div class="font-serif">
+  <div
+    class="font-serif bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1738768263/textura_LE_upscale_balanced_x4v2_fekn3r.jpg')] bg-cover"
+  >
     <div class="flex items-center justify-center mt-8 m-5 p-2.5">
       <h1 class="text-4xl md:text-4xl font-serif text-center">
         RESERVA UNA REUNIÓN INICIAL
@@ -8,7 +10,7 @@
 
     <div>
       <div
-        class="flex space-x-4 mb-4 items-center justify-center border-1 border-slate-700 bg-neutral-200"
+        class="flex space-x-4 mb-4 items-center justify-center border-1 border-neutral-400 bg-neutral-200"
       >
         <button
           v-for="categoria in categories"
@@ -25,18 +27,17 @@
         </button>
       </div>
 
-      <!-- Contenido dinámico basado en la categoría seleccionada MATRIMONIOS -->
       <div v-if="selectedCategory === 'matrimonios'">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 m-5 p-2.5">
           <div
             v-for="paquete in filteredPackages('matrimonios')"
             :key="paquete.id"
-            class="bg-white shadow-lg overflow-hidden border-4 border-slate-700"
+            class="bg-white shadow-lg overflow-hidden border-4 border-neutral-400"
           >
             <img
               :src="paquete.image"
               alt="Imagen del paquete"
-              class="w-full h-48 object-cover border-2 border-slate-700 flex"
+              class="w-full h-48 object-cover border-2 border-neutral-400 flex"
             />
             <div class="p-4">
               <h3 class="text-lg font-bold mb-2 bg-neutral-200">{{ paquete.title }}</h3>
@@ -45,7 +46,6 @@
               </p>
               <p class="text-gray-600 bg-neutral-100">{{ paquete.description }}</p>
 
-              <!-- Botón para navegar a la vista bodaEstandar -->
               <router-link
                 v-if="
                   paquete.category === 'matrimonios' &&
@@ -94,7 +94,7 @@
           <div
             v-for="paquete in filteredPackages('quinceanos')"
             :key="paquete.id"
-            class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-slate-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-neutral-400 mb-4"
           >
             <img
               :src="paquete.image"
@@ -158,7 +158,7 @@
           <div
             v-for="paquete in filteredPackages('eventosprivados')"
             :key="paquete.id"
-            class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-slate-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-neutral-400 mb-4"
           >
             <img
               :src="paquete.image"
@@ -217,11 +217,11 @@
       <!-- Contenido dinámico basado en la categoría seleccionada OTROS -->
 
       <div v-if="selectedCategory === 'otros'">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-auto px-4 mb-4">
           <div
             v-for="paquete in filteredPackages('otros')"
             :key="paquete.id"
-            class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-slate-700"
+            class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-neutral-400"
           >
             <img
               :src="paquete.image"

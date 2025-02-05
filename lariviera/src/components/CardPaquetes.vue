@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <div
-      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-slate-700"
+      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-neutral-500"
     >
       <img src="@/assets/img/EpEstandar.jpeg" alt="" class="h-48 w-full" />
       <h3 class="text-xl font-bold text-gray-600 font-serif mt-2 bg-neutral-200">
@@ -9,12 +9,15 @@
       </h3>
       <p class="text-gray-600 font-serif bg-neutral-100">190 Bs por persona</p>
       <p class="text-gray-600 font-serif bg-neutral-100">
-        El paquete Gold incluye: Decoracion personalizada, catering gourmet y DJ
-        profesional
+        Querida quinceañera y familia, Es un honor para nosotros ser parte de este momento
+        tan especial en sus vidas.
+        <router-link to="/paquetes" class="text-sky-600 hover:text-black"
+          >Ver a Detalle...</router-link
+        >
       </p>
     </div>
     <div
-      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-slate-700"
+      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-neutral-500"
     >
       <img
         alt=""
@@ -26,11 +29,15 @@
       </h3>
       <p class="text-gray-600 font-serif bg-neutral-100">190 Bs por persona</p>
       <p class="text-gray-600 font-serif bg-neutral-100">
-        Disfruta de una deliciosa gastronomía en nuestro restaurante.
+        Estimados novios, Es un placer para nosotros ser parte de este momento tan
+        especial en sus vidas.
+        <router-link to="/paquetes" class="text-sky-600 hover:text-black"
+          >Ver a Detalle...</router-link
+        >
       </p>
     </div>
     <div
-      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-slate-700"
+      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-neutral-500"
     >
       <img src="@/assets/img/EPPlatinum.jpeg" alt="" class="h-48 w-full" />
       <h3 class="text-xl font-bold font-serif mt-2 text-gray-600 bg-neutral-200">
@@ -38,7 +45,11 @@
       </h3>
       <p class="text-gray-600 font-serif bg-neutral-100">190 Bs por persona</p>
       <p class="text-gray-600 font-serif bg-neutral-100">
-        Relájate y renueva energías en nuestro exclusivo spa.
+        Estimados anfitriones y familia, Es un honor para nosotros ser parte de este
+        momento tan especial en sus vidas.
+        <router-link to="/paquetes" class="text-sky-600 hover:text-black"
+          >Ver a Detalle...</router-link
+        >
       </p>
     </div>
   </div>

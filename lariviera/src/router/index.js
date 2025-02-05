@@ -11,6 +11,7 @@ import EventoPrivadoEstandarView from '@/views/EventoPrivadoEstandarView.vue'
 import EventoPrivadoGoldView from '@/views/EventoPrivadoGoldView.vue'
 import EventoPrivadoPlatinumView from '@/views/EventoPrivadoPlatinumView.vue'
 import OtrosView from '@/views/OtrosView.vue'
+import Gallery from '@/views/Gallery.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -76,6 +77,11 @@ const router = createRouter({
       path: '/otros/:id',
       name: 'OtrosView',
       component: OtrosView
+    },
+    {
+      path: '/galeria',
+      name: 'Gallery',
+      component: Gallery
     },
 
 
