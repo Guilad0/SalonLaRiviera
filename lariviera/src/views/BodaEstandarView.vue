@@ -1,23 +1,22 @@
 <template>
-  <div class="m-5 p-2.5">
+  <div class="m-5 p-2.5 font-serif text-2xl">
     <h1>Detalles del Paquete Estándar: {{ paqueteId }}</h1>
     <h2 class="text-justify italic">
-      "Estimados novios,
-
-      Es un placer para nosotros ser parte de este momento tan especial en sus vidas. En nombre del <b>Salón de Eventos
-        La Riviera</b>, nos especializamos en hacer de cada boda un evento único e inolvidable, cuidando cada detalle
-      para que disfruten de una celebración mágica y sin preocupaciones.
-
-      A continuación, les presentamos nuestra propuesta de cotización, diseñada para adaptarse a sus necesidades y hacer
-      realidad la boda de sus sueños.
-
-      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un honor acompañarlos en este gran día."
+      "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial
+      en sus vidas. En nombre del <b>Salón de Eventos La Riviera</b>, nos especializamos
+      en hacer de cada boda un evento único e inolvidable, cuidando cada detalle para que
+      disfruten de una celebración mágica y sin preocupaciones. A continuación, les
+      presentamos nuestra propuesta de cotización, diseñada para adaptarse a sus
+      necesidades y hacer realidad la boda de sus sueños. Quedamos atentos a cualquier
+      consulta o ajuste que deseen realizar. Será un honor acompañarlos en este gran día."
     </h2>
 
     <h3 class="underline">
-      A continuación, detallamos los servicios y opciones incluidas en nuestra cotización, diseñados para cubrir todas
-      las necesidades de su boda y asegurar que sea un evento memorable.
-    </h3>`
+      A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
+      diseñados para cubrir todas las necesidades de su boda y asegurar que sea un evento
+      memorable.
+    </h3>
+    `
     <div>
       <table class="table-auto w-full border-collapse mt-4">
         <!-- <thead>
@@ -55,7 +54,9 @@
               <p class="text-justify italic">• Ron Solera</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)</p>
+              <p class="text-justify italic font-bold">
+                Bebidas sin alcohol (canilla libre)
+              </p>
               <p class="text-justify italic">• Gaseosas /hielo/limón/agua</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
@@ -77,7 +78,9 @@
               <p class="text-justify italic">• Coordinador de Eventos.</p>
               <p class="text-justify italic">• Garzones</p>
               <p class="text-justify italic">• Personal de seguridad</p>
-              <p class="text-justify italic">• Personal de limpieza durante todo el evento</p>
+              <p class="text-justify italic">
+                • Personal de limpieza durante todo el evento
+              </p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Propuesta de servicio</p>
@@ -90,20 +93,28 @@
             <td colspan="3" class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Detalles del plato servido</p>
               <p class="text-justify italic font-bold">Carnes:</p>
-              <p class="text-justify italic">• Peceto relleno/medallón de pollo /filete de cerdo al vino</p>
+              <p class="text-justify italic">
+                • Peceto relleno/medallón de pollo /filete de cerdo al vino
+              </p>
               <p class="text-justify italic font-bold">Guarniciones:</p>
-              <p class="text-justify italic">• Papa salteada al vino/croqueta de yuca/pastel de papa/arroz chifa</p>
+              <p class="text-justify italic">
+                • Papa salteada al vino/croqueta de yuca/pastel de papa/arroz chifa
+              </p>
               <p class="text-justify italic font-bold">Ensaladas</p>
-              <p class="text-justify italic">• Salsa waldorf/salsa alemana con millo/salsa griega/ verduras al vapor</p>
+              <p class="text-justify italic">
+                • Salsa waldorf/salsa alemana con millo/salsa griega/ verduras al vapor
+              </p>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <br><br>
-    <h3 class="text-justify italic font-bold">Calcula el Costo Total según el Número de Invitados, previo reunion con el
-      coordinador</h3>
-      <br>
+    <br /><br />
+    <h3 class="text-justify italic font-bold">
+      Calcula el Costo Total según el Número de Invitados, previo reunion con el
+      coordinador
+    </h3>
+    <br />
 
     <!-- Tabla de cotización -->
     <table>
@@ -131,11 +142,11 @@
 
 <script>
 export default {
-  props: ['id'],
+  props: ["id"],
   data() {
     return {
       cantidad: 0, // Comienza con 0
-      precioUnitario: 185 // Precio de ejemplo
+      precioUnitario: 185, // Precio de ejemplo
     };
   },
   computed: {
@@ -144,8 +155,8 @@ export default {
     },
     total() {
       return this.cantidad * this.precioUnitario;
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -1,26 +1,25 @@
 <template>
-  <div class="m-5 p-2.5">
+  <div class="m-5 p-2.5 font-serif text-2xl">
     <h1>Detalles del Eventos de Empresa: {{ paqueteId }}</h1>
     <h2 class="text-justify italic">
       <p><b>"Estimados organizadores y equipo,</b></p>
 
-      Es un honor para nosotros ser parte de su próximo evento. En nombre del <b>Salón de Eventos
-        La Riviera</b>, nos especializamos en crear experiencias memorables, brindando un servicio impecable y cuidando
-      cada detalle para garantizar el éxito de su reunión.
-
-      A continuación, les presentamos nuestra propuesta de cotización, diseñada para adaptarse a sus necesidades y hacer
-      de su evento corporativo, seminario o disertación una experiencia profesional y enriquecedora.
-
-      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un placer acompañarlos en la organización
-      de este importante encuentro."
+      Es un honor para nosotros ser parte de su próximo evento. En nombre del
+      <b>Salón de Eventos La Riviera</b>, nos especializamos en crear experiencias
+      memorables, brindando un servicio impecable y cuidando cada detalle para garantizar
+      el éxito de su reunión. A continuación, les presentamos nuestra propuesta de
+      cotización, diseñada para adaptarse a sus necesidades y hacer de su evento
+      corporativo, seminario o disertación una experiencia profesional y enriquecedora.
+      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un placer
+      acompañarlos en la organización de este importante encuentro."
     </h2>
 
     <h3 class="underline">
-
-      A continuación, detallamos los servicios y opciones incluidas en nuestra cotización, diseñados para cubrir todas
-      las necesidades de su evento empresarial, seminario o disertación, garantizando una experiencia profesional y
-      exitosa.
-    </h3>`
+      A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
+      diseñados para cubrir todas las necesidades de su evento empresarial, seminario o
+      disertación, garantizando una experiencia profesional y exitosa.
+    </h3>
+    `
     <div>
       <table class="table-auto w-full border-collapse mt-4">
         <!-- <thead>
@@ -35,38 +34,28 @@
           <tr>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">REQURIMENTO DE SALÓN</p>
-              <p class="text-justify italic">♦ SALÓN AMPLIO AIRE ACONDICIONADO
-              </p>
-              <p class="text-justify italic">♦ 500 SILLAS TIFFANY
-              </p>
-              <p class="text-justify italic">♦ MESAS DE APOYO
-              </p>
-              <p class="text-justify italic">♦ ACCESO A BAÑOS EQUIPADOS
-              </p>
-              <p class="text-justify italic">♦ AREAS DE JARDIN PARA DESCANSO
-              </p>
+              <p class="text-justify italic">♦ SALÓN AMPLIO AIRE ACONDICIONADO</p>
+              <p class="text-justify italic">♦ 500 SILLAS TIFFANY</p>
+              <p class="text-justify italic">♦ MESAS DE APOYO</p>
+              <p class="text-justify italic">♦ ACCESO A BAÑOS EQUIPADOS</p>
+              <p class="text-justify italic">♦ AREAS DE JARDIN PARA DESCANSO</p>
             </td>
 
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Bs 2000 </p>
-
+              <p class="text-justify italic font-bold">Bs 2000</p>
             </td>
           </tr>
           <!-- Fila 2 -->
           <tr>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">HERRAMIENTAS AUDIOVISUALES</p>
-              <p class="text-justify italic">♦ PANTALLA LED
-              </p>
-              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS
-              </p>
-              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS
-              </p>
+              <p class="text-justify italic">♦ PANTALLA LED</p>
+              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS</p>
+              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS</p>
             </td>
 
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Bs 1800 </p>
-
+              <p class="text-justify italic font-bold">Bs 1800</p>
             </td>
           </tr>
           <!-- Fila 3 -->
@@ -86,10 +75,12 @@
         </tbody>
       </table>
     </div>
-    <br><br>
-    <h3 class="text-justify italic font-bold">Calcula el Costo Total según el Número de Invitados, previo reunion con el
-      coordinador</h3>
-    <br>
+    <br /><br />
+    <h3 class="text-justify italic font-bold">
+      Calcula el Costo Total según el Número de Invitados, previo reunion con el
+      coordinador
+    </h3>
+    <br />
 
     <!-- Tabla de cotización -->
     <table>
@@ -117,11 +108,11 @@
 
 <script>
 export default {
-  props: ['id'],
+  props: ["id"],
   data() {
     return {
       cantidad: 0, // Comienza con 0
-      precioUnitario: 190 // Precio de ejemplo
+      precioUnitario: 190, // Precio de ejemplo
     };
   },
   computed: {
@@ -130,8 +121,8 @@ export default {
     },
     total() {
       return this.cantidad * this.precioUnitario;
-    }
-  }
+    },
+  },
 };
 </script>
 

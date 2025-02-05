@@ -1,24 +1,23 @@
 <template>
-  <div class="m-5 p-2.5">
+  <div class="m-5 p-2.5 font-serif">
     <h1>Detalles del Paquete Estándar: {{ paqueteId }}</h1>
     <h2 class="text-justify italic">
-      "Querida quinceañera y familia,
-
-      Es un honor para nosotros ser parte de este momento tan especial en sus vidas. En nombre del <b>Salón de Eventos
-        La Riviera</b>, nos especializamos en crear celebraciones inolvidables, cuidando cada detalle para que disfruten
-      de una fiesta mágica y sin preocupaciones.
-
-      A continuación, les presentamos nuestra propuesta de cotización, diseñada para adaptarse a sus necesidades y hacer
-      realidad la fiesta de quince años de sus sueños.
-
-      Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un honor acompañarlos en este día tan
+      "Querida quinceañera y familia, Es un honor para nosotros ser parte de este momento
+      tan especial en sus vidas. En nombre del <b>Salón de Eventos La Riviera</b>, nos
+      especializamos en crear celebraciones inolvidables, cuidando cada detalle para que
+      disfruten de una fiesta mágica y sin preocupaciones. A continuación, les presentamos
+      nuestra propuesta de cotización, diseñada para adaptarse a sus necesidades y hacer
+      realidad la fiesta de quince años de sus sueños. Quedamos atentos a cualquier
+      consulta o ajuste que deseen realizar. Será un honor acompañarlos en este día tan
       especial."
     </h2>
 
     <h3 class="underline">
-      A continuación, detallamos los servicios y opciones incluidas en nuestra cotización, diseñados para cubrir todas
-      las necesidades de su fiesta de quince años y asegurar que sea un evento memorable.
-    </h3>`
+      A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
+      diseñados para cubrir todas las necesidades de su fiesta de quince años y asegurar
+      que sea un evento memorable.
+    </h3>
+    `
     <div>
       <table class="table-auto w-full border-collapse mt-4">
         <!-- <thead>
@@ -37,14 +36,16 @@
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Saladitos</p>
-              <p class="text-justify italic">• Pizzetas </p>
+              <p class="text-justify italic">• Pizzetas</p>
               <p class="text-justify italic">• Brochetas de cerdo</p>
               <p class="text-justify italic">• Tartaletas</p>
               <p class="text-justify italic">• Albondigas</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)	</p>
-              <p class="text-justify italic">• Gaseosas / agua/jugos</p>              
+              <p class="text-justify italic font-bold">
+                Bebidas sin alcohol (canilla libre)
+              </p>
+              <p class="text-justify italic">• Gaseosas / agua/jugos</p>
             </td>
           </tr>
           <!-- Fila 2 -->
@@ -53,7 +54,7 @@
               <p class="text-justify italic font-bold">Montaje</p>
               <p class="text-justify italic">• Mesas, sillas vestidas.</p>
               <p class="text-justify italic">• Vajilla, cristalería.</p>
-              <p class="text-justify italic">• Cubertería.</p>              
+              <p class="text-justify italic">• Cubertería.</p>
             </td>
             <td class="border px-4 py-2 text-left align-top">
               <p class="text-justify italic font-bold">Amplificación</p>
@@ -65,16 +66,20 @@
               <p class="text-justify italic">• Coordinador de Eventos.</p>
               <p class="text-justify italic">• Garzones</p>
               <p class="text-justify italic">• Personal de seguridad</p>
-              <p class="text-justify italic">• Personal de limpieza durante todo el evento</p>
+              <p class="text-justify italic">
+                • Personal de limpieza durante todo el evento
+              </p>
             </td>
-          </tr>                         
+          </tr>
         </tbody>
       </table>
     </div>
-    <br><br>
-    <h3 class="text-justify italic font-bold">Calcula el Costo Total según el Número de Invitados, previo reunion con el
-      coordinador</h3>
-    <br>
+    <br /><br />
+    <h3 class="text-justify italic font-bold">
+      Calcula el Costo Total según el Número de Invitados, previo reunion con el
+      coordinador
+    </h3>
+    <br />
 
     <!-- Tabla de cotización -->
     <table>
@@ -102,11 +107,11 @@
 
 <script>
 export default {
-  props: ['id'],
+  props: ["id"],
   data() {
     return {
       cantidad: 0, // Comienza con 0
-      precioUnitario: 150 // Precio de ejemplo
+      precioUnitario: 150, // Precio de ejemplo
     };
   },
   computed: {
@@ -115,8 +120,8 @@ export default {
     },
     total() {
       return this.cantidad * this.precioUnitario;
-    }
-  }
+    },
+  },
 };
 </script>
 
