@@ -2,6 +2,9 @@
 import ChatBot from "@/components/ChatBot.vue";
 import Carrusel from "@/components/Carrusel.vue";
 import CardPaquetes from "@/components/CardPaquetes.vue";
+import CardEventos from "@/components/CardEventos.vue";
+import CardConferencias from "@/components/CardConferencias.vue";
+import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
 </script>
 
 <template>
@@ -13,15 +16,15 @@ import CardPaquetes from "@/components/CardPaquetes.vue";
         class="absolute inset-0 w-full h-full object-cover opacity-90 bg-black"
       />
 
-      <p
+      <!-- <p
         class="absolute text-6xl font-extrabold text-neutral-300 font-serif texts text-center bg-opacity-80 w-96 right-40 border-4 border-slate-200"
       >
         SALÓN DE EVENTOS LA RIVIERA
-      </p>
+      </p> -->
       <img
         src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
         alt=""
-        class="h-96 mr-2 absolute left-10 rounded-full border-4 border-slate-900"
+        class="h-24 mr-2 absolute left-0 top-3 rounded-full border-4 border-slate-900"
       />
     </div>
 
@@ -30,7 +33,7 @@ import CardPaquetes from "@/components/CardPaquetes.vue";
     >
       <div class="relative w-full max-w-4xl mb-10">
         <p
-          class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-neutral-400 text-neutral-500"
+          class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-stone-800 text-stone-800"
         >
           PAQUETES
         </p>
@@ -42,7 +45,24 @@ import CardPaquetes from "@/components/CardPaquetes.vue";
       </div>
 
       <div class="relative w-full max-w-4xl mt-10">
+        <p
+          class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-neutral-400 text-neutral-500"
+        >
+          CONCIERTOS
+        </p>
+        <CardEventos class="flex m-4 max-w-4xl" />
+      </div>
+      <p
+        class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-neutral-400 text-neutral-500"
+      >
+        CONFERENCIAS
+      </p>
+      <div class="relative w-full max-w-4xl mt-10">
+        <CardConferencias />
+      </div>
+      <div class="m-4">
         <ChatBot />
+        <WhatsAppComponent />
       </div>
     </div>
   </div>

@@ -241,7 +241,7 @@
                   paquete.category === 'otros' && paquete.title === 'Eventos de Empresa'
                 "
                 :to="{ name: 'OtrosView', params: { id: paquete.id } }"
-                class="inline-block mt-4 px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-700"
+                class="mt-4 px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-700 flex justify-center"
                 @click="scrollToTop"
               >
                 Ver detalles

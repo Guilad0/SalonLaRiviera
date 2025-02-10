@@ -13,7 +13,7 @@
     <ul class="hidden md:flex space-x-6 text-black">
       <li><router-link to="/" class="hover:text-gray-400">Inicio</router-link></li>
       <li>
-        <router-link to="/Ofertas" class="hover:text-gray-400">Eventos</router-link>
+        <router-link to="/eventos" class="hover:text-gray-400">Eventos</router-link>
       </li>
 
       <li>

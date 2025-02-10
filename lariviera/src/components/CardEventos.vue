@@ -55,8 +55,8 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import MainCard from "../components/MainCard.vue";
 </script>
 
 <style></style>

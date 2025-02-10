@@ -12,6 +12,7 @@ import EventoPrivadoGoldView from '@/views/EventoPrivadoGoldView.vue'
 import EventoPrivadoPlatinumView from '@/views/EventoPrivadoPlatinumView.vue'
 import OtrosView from '@/views/OtrosView.vue'
 import Gallery from '@/views/Gallery.vue'
+import Eventos from '@/views/EventosView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -83,6 +84,11 @@ const router = createRouter({
       name: 'Gallery',
       component: Gallery
     },
+    {
+      path: '/eventos',
+      name: 'Eventos',
+      component: Eventos
+    }
 
 
   ]
