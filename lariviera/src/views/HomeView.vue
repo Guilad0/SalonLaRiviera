@@ -16,51 +16,46 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         class="absolute inset-0 w-full h-full object-cover opacity-90 bg-black"
       />
 
-      <!-- <p
-        class="absolute text-6xl font-extrabold text-neutral-300 font-serif texts text-center bg-opacity-80 w-96 right-40 border-4 border-slate-200"
-      >
-        SALÓN DE EVENTOS LA RIVIERA
-      </p> -->
       <img
         src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
-        alt=""
-        class="h-24 mr-2 absolute left-0 top-3 rounded-full border-4 border-slate-900"
+        alt="logo"
+        class="h-24 absolute left-4 top-4 rounded-full border-4 border-slate-900 shadow-lg"
       />
     </div>
 
-    <div
-      class="relative flex flex-col items-center w-full min-h-screen p-10 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1738768263/textura_LE_upscale_balanced_x4v2_fekn3r.jpg')] bg-cover"
-    >
-      <div class="relative w-full max-w-4xl mb-10">
-        <p
-          class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-stone-800 text-stone-800"
+    <div class="relative flex flex-col items-center w-full min-h-screen p-10 bg-gray-100">
+      <section class="relative w-full max-w-4xl mb-10 text-center">
+        <h2
+          class="text-4xl font-bold font-serif bg-neutral-200 border-2 border-stone-800 text-stone-800 p-2 rounded-lg shadow"
         >
           PAQUETES
-        </p>
+        </h2>
         <CardPaquetes />
-      </div>
+      </section>
 
-      <div class="relative w-full max-w-4xl">
-        <Carrusel class="w-full shadow-lg rounded-none" />
-      </div>
+      <section class="relative w-full max-w-4xl">
+        <Carrusel class="w-full shadow-lg rounded-lg" />
+      </section>
 
-      <div class="relative w-full max-w-4xl mt-10">
-        <p
-          class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-neutral-400 text-neutral-500"
+      <section class="relative w-full max-w-4xl mt-10 text-center">
+        <h2
+          class="text-4xl font-bold font-serif bg-neutral-200 border-2 border-neutral-400 text-neutral-500 p-2 rounded-lg shadow"
         >
           CONCIERTOS
-        </p>
+        </h2>
         <CardEventos class="flex m-4 max-w-4xl" />
-      </div>
-      <p
-        class="text-4xl font-bold font-serif flex justify-center mb-4 bg-neutral-200 border-2 border-neutral-400 text-neutral-500"
-      >
-        CONFERENCIAS
-      </p>
-      <div class="relative w-full max-w-4xl mt-10">
+      </section>
+
+      <section class="relative w-full max-w-4xl mt-10 text-center">
+        <h2
+          class="text-4xl font-bold font-serif bg-neutral-200 border-2 border-neutral-400 text-neutral-500 p-2 rounded-lg shadow"
+        >
+          CONFERENCIAS
+        </h2>
         <CardConferencias />
-      </div>
-      <div class="m-4">
+      </section>
+
+      <div class="m-4 flex flex-col items-center space-y-4">
         <ChatBot />
         <WhatsAppComponent />
       </div>

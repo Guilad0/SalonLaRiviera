@@ -22,13 +22,13 @@
             >Inicio</router-link
           >
         </li>
-        <li>
+        <!-- <li>
           <router-link
             to="/eventos"
             class="hover:text-gray-500 transition-colors duration-300"
             >Eventos</router-link
           >
-        </li>
+        </li> -->
         <li>
           <router-link
             to="/galeria"
@@ -77,14 +77,14 @@
               >Inicio</router-link
             >
           </li>
-          <li>
+          <!-- <li>
             <router-link
               @click="toggleMenu"
               to="/eventos"
               class="block py-2 hover:text-white hover:bg-neutral-400 transition-colors duration-300 rounded-lg"
               >Eventos</router-link
             >
-          </li>
+          </li> -->
           <li>
             <router-link
               @click="toggleMenu"
