@@ -42,7 +42,7 @@
             </td>
 
             <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Bs 2000</p>
+              <p class="text-justify italic font-bold">Bs 6000</p>
             </td>
           </tr>
           <!-- Fila 2 -->
@@ -59,31 +59,41 @@
             </td>
           </tr>
           <!-- Fila 3 -->
-          <!-- <tr>
-            <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Fondeu de chocolate</p>
-              <p class="text-justify italic">• Frutas de temporada</p>
-              <p class="text-justify italic">• Mashmelos</p>
-              <p class="text-justify italic">• Detalles de chocolate</p>
-            </td>
-            <td class="border px-4 py-2 text-left align-top">
-              <p class="text-justify italic font-bold">Servicio de barman </p>
-              <p class="text-justify italic">• Forzzens</p>
-              <p class="text-justify italic">• Moctels</p>
-            </td>
-          </tr> -->
+
+
         </tbody>
       </table>
+      <br><br>
+      <h2 class="text-2xl font-bold italic">ADICIONAL:</h2>
+      <ul class="list-disc list-inside space-y-2 mt-2">
+        <li class="text-justify">
+          Servicio de catering para todo tipo de eventos Censa Gourmet: banquetes,
+          servicios de brunch, mesas dulces, mesas saladas, etc. (según requerimiento).
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-bold italic mt-4">EXTRAS:</h2>
+      <ul class="list-disc list-inside space-y-2 mt-2">
+        <li class="text-justify">
+          Amplificación y sonido ambiental, ajustados según los requerimientos del evento.
+        </li>
+        <li class="text-justify">
+          Iluminación personalizada, adaptada a las necesidades del evento.
+        </li>
+        <li class="text-justify">
+          Data display, disponible bajo planificación previa con el coordinador de sonido.
+        </li>
+      </ul>
     </div>
     <br /><br />
-    <h3 class="text-justify italic font-bold">
+    <!-- <h3 class="text-justify italic font-bold">
       Calcula el Costo Total según el Número de Invitados, previo reunion con el
       coordinador
-    </h3>
+    </h3> -->
     <br />
 
     <!-- Tabla de cotización -->
-    <table>
+    <!-- <table>
       <thead>
         <tr>
           <th>Descripción</th>
@@ -102,7 +112,7 @@
           <td>{{ total }} Bs</td>
         </tr>
       </tbody>
-    </table>
+    </table> -->
   </div>
 </template>
 
