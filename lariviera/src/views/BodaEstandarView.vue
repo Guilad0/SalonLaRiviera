@@ -1,6 +1,7 @@
 <template>
-  <div class="m-5 p-2.5 font-serif text-2xl">
-    <h1>Detalles del Paquete Estándar: {{ paqueteId }}</h1>
+   <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
+    <h1 class="text-1xl font-[Mode G]">Detalles del Paquete Estándar: {{ paqueteId }}</h1>
+
     <h2 class="text-justify italic">
       "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial
       en sus vidas. En nombre del <b>Salón de Eventos La Riviera</b>, nos especializamos
@@ -16,16 +17,9 @@
       diseñados para cubrir todas las necesidades de su boda y asegurar que sea un evento
       memorable.
     </h3>
-    `
+
     <div>
       <table class="table-auto w-full border-collapse mt-4">
-        <!-- <thead>
-    <tr>
-      <th class="border px-4 py-2">Columna 1</th>
-      <th class="border px-4 py-2">Columna 2</th>
-      <th class="border px-4 py-2">Columna 3</th>
-    </tr>
-  </thead> -->
         <tbody>
           <!-- Fila 1 -->
           <tr>
@@ -111,29 +105,29 @@
     </div>
     <br /><br />
     <h3 class="text-justify italic font-bold">
-      Calcula el Costo Total según el Número de Invitados, previo reunion con el
+      Calcula el Costo Total según el Número de Invitados, previo reunión con el
       coordinador
     </h3>
     <br />
 
     <!-- Tabla de cotización -->
-    <table>
+    <table class="table-auto w-full border-collapse mt-4">
       <thead>
         <tr>
-          <th>Descripción</th>
-          <th>Cantidad de Personas</th>
-          <th>Precio Unitario</th>
-          <th>Total</th>
+          <th class="px-4 py-2 border">Descripción</th>
+          <th class="px-4 py-2 border">Cantidad de Personas</th>
+          <th class="px-4 py-2 border">Precio Unitario</th>
+          <th class="px-4 py-2 border">Total</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Paquete Estándar</td>
-          <td>
+          <td class="border px-4 py-2">Paquete Estándar</td>
+          <td class="border px-4 py-2">
             <input type="number" v-model="cantidad" min="0" class="input-cantidad" />
           </td>
-          <td>{{ precioUnitario }} Bs</td>
-          <td>{{ total }} Bs</td>
+          <td class="border px-4 py-2">{{ precioUnitario }} Bs</td>
+          <td class="border px-4 py-2">{{ total }} Bs</td>
         </tr>
       </tbody>
     </table>
@@ -188,8 +182,12 @@ tr:nth-child(even) {
   padding: 5px;
   font-size: 16px;
   background-color: white;
-  /* Asegura que el fondo siempre sea visible */
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-  /* Le da un ligero relieve */
+}
+
+h1 {
+  font-family: 'Mode G', serif;
+  font-size: 2.3rem;
 }
 </style>
+

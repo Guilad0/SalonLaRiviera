@@ -395,8 +395,45 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 button {
   transition: background-color 0.3s, color 0.3s;
 }
+/* Aquí agregamos la fuente Mode G en los estilos locales */
+@import "@/assets/styles/fonts.css"; /* Asegúrate de que esté importado */
+
+body, h1, h2, h3, p {
+  font-family: 'Mode G', sans-serif; /* Aplicamos la fuente personalizada */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Estilos adicionales */
+.input-cantidad {
+  width: 60px;
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 </style>
