@@ -195,7 +195,7 @@ tr:nth-child(even) {
   /* Le da un ligero relieve */
 }
 h1 {
-  font-family: 'Mode G', serif; /* Asegúrate de que 'Mode G' esté bien escrito */
-  font-size: 2.3rem; /* Ajusta el tamaño de la fuente*/
+  font-family: 'Mode G', serif; 
+  font-size: 2.3rem; 
 }
 </style>
