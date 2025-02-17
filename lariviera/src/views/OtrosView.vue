@@ -1,6 +1,6 @@
 <template>
-  <div class="m-5 p-2.5 font-serif text-2xl">
-    <h1>Detalles del Eventos de Empresa: {{ paqueteId }}</h1>
+  <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
+    <h1 class="text-1xl font-[Mode G]">Detalles del Evento de Empresa: {{ paqueteId }}</h1>
     <h2 class="text-justify italic">
       <p><b>"Estimados organizadores y equipo,</b></p>
 
@@ -167,5 +167,10 @@ tr:nth-child(even) {
   /* Asegura que el fondo siempre sea visible */
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
   /* Le da un ligero relieve */
+}
+
+h1 {
+  font-family: 'Mode G', serif;
+  font-size: 2.3rem;
 }
 </style>
