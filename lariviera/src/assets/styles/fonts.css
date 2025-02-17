@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Mode G';
+    src: url('@/assets/fonts/ModeG.woff2') format('woff2'),
+         url('@/assets/fonts/ModeG.woff') format('woff'),
+         url('@/assets/fonts/ModeG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('@/assets/fonts/Comfortaa.woff2') format('woff2'),
+         url('@/assets/fonts/Comfortaa.woff') format('woff'),
+         url('@/assets/fonts/Comfortaa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tailwind Light';
+    src: url('@/assets/fonts/Tailwind Light.woff2') format('woff2'),
+         url('@/assets/fonts/Tailwind Light.woff') format('woff'),
+         url('@/assets/fonts/Tailwind Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
