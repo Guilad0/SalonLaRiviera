@@ -296,7 +296,7 @@ export default {
           category: "matrimonios",
           title: "Paquete Matrimonial Estandar",
           description:
-            "Incluye decoración básica, catering gourmet y DJ profesional o música a elección. Una opción ideal para una boda sencilla pero especial.",
+            "Incluye decoración básica, catering gourmet y música a elección. Una opción ideal para una boda sencilla pero especial.",
           price: "Bs 185 por persona",
           image: "src/assets/img/BodaEstandar.jpeg",
         },
@@ -305,7 +305,7 @@ export default {
           category: "matrimonios",
           title: "Paquete Matrimonial Gold",
           description:
-            "Ofrece decoración personalizada, un menú gourmet exclusivo y DJ profesional. Perfecto para quienes buscan un evento elegante.",
+            "Ofrece decoración personalizada, un menú gourmet exclusivo y música a elección. Perfecto para quienes buscan un evento elegante.",
           price: "Bs 190 por persona",
           image: "src/assets/img/BodaGold.jpeg",
         },
@@ -349,7 +349,7 @@ export default {
           category: "matrimonios",
           title: "Paquete Matrimonial Platinum",
           description:
-            "Brinda una decoración de lujo, catering gourmet de alto nivel y DJ profesional. La mejor opción para una boda inolvidable y sofisticada.",
+            "Brinda una decoración de lujo, catering gourmet y música a elección. La mejor opción para una boda inolvidable.",
           price: "Bs 220 por persona",
           image: "src/assets/img/BodaPlatinum.jpeg",
         },
