@@ -2,10 +2,12 @@
   <div class="min-h-screen bg-gray-100">
     <header class="bg-white shadow-md py-6">
       <div class="container mx-auto px-4">
-        <h1 class="text-3xl md:text-4xl font-serif text-gray-800 text-center">
+        <h1 class="text-3xl md:text-4xl font-[Comfortaa] text-gray-800 text-center">
           Galería de Eventos
         </h1>
-        <p class="text-center text-gray-600 mt-2">Capturando momentos especiales</p>
+        <p class="text-center text-gray-600 mt-2" style="font-family: 'Comfortaa', sans-serif;">
+          Capturando momentos especiales
+        </p>
       </div>
     </header>
 
@@ -15,12 +17,13 @@
           v-for="category in categories"
           :key="category"
           @click="selectedCategory = category"
-          :class="[
-            'px-4 py-2 rounded-full transition-all duration-300',
-            selectedCategory === category
-              ? 'bg-neutral-400 text-white shadow-lg'
-              : 'bg-white text-gray-700 hover:bg-blue-50',
+          :class="[ 
+            'px-4 py-2 rounded-full transition-all duration-300', 
+            selectedCategory === category 
+              ? 'bg-neutral-400 text-white shadow-lg' 
+              : 'bg-white text-gray-700 hover:bg-blue-50' 
           ]"
+          style="font-family: 'Comfortaa', sans-serif;"
         >
           {{ category }}
         </button>
@@ -45,8 +48,12 @@
             class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
             <div class="absolute bottom-0 left-0 right-0 p-4">
-              <h3 class="text-white font-medium">{{ photo.title }}</h3>
-              <p class="text-gray-200 text-sm">{{ photo.description }}</p>
+              <h3 class="text-white font-medium" style="font-family: 'Comfortaa', sans-serif;">
+                {{ photo.title }}
+              </h3>
+              <p class="text-gray-200 text-sm" style="font-family: 'Comfortaa', sans-serif;">
+                {{ photo.description }}
+              </p>
             </div>
           </div>
         </div>
@@ -69,8 +76,12 @@
             class="max-h-[80vh] max-w-full object-contain rounded-lg"
           />
           <div class="text-white mt-4">
-            <h3 class="text-xl font-medium">{{ selectedPhoto.title }}</h3>
-            <p class="text-gray-300">{{ selectedPhoto.description }}</p>
+            <h3 class="text-xl font-medium" style="font-family: 'Comfortaa', sans-serif;">
+              {{ selectedPhoto.title }}
+            </h3>
+            <p class="text-gray-300" style="font-family: 'Comfortaa', sans-serif;">
+              {{ selectedPhoto.description }}
+            </p>
           </div>
         </div>
       </div>
@@ -197,3 +208,19 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/* Font Comfortaa applied to all text elements */
+* {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+h1, h2, h3, p {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+/* Button styling */
+button {
+  font-family: 'Comfortaa', sans-serif;
+}
+</style>
