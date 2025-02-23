@@ -7,8 +7,10 @@
       <h3 class="text-xl font-bold text-gray-600 font-serif mt-2 bg-neutral-200">
         15 años
       </h3>
-      <p class="text-gray-600 font-serif bg-neutral-100">190 Bs por persona</p>
-      <p class="text-gray-600 font-serif bg-neutral-100">
+      <p class="text-gray-600 font-serif border-2 border-stone-700 m-2">
+        190 Bs por persona
+      </p>
+      <p class="text-gray-600 font-serif">
         Querida quinceañera y familia, Es un honor para nosotros ser parte de este momento
         tan especial en sus vidas.
         <router-link to="/paquetes" class="text-sky-600 hover:text-black"
@@ -27,9 +29,11 @@
       <h3 class="text-xl font-serif font-bold text-gray-600 mt-2 bg-neutral-200">
         Matrimonios
       </h3>
-      <p class="text-gray-600 font-serif bg-neutral-100">190 Bs por persona</p>
+      <p class="text-gray-600 font-serif bg-neutral-100 border-2 border-stone-700 m-2">
+        190 Bs por persona
+      </p>
       <p class="text-gray-600 font-serif bg-neutral-100">
-        Estimados novios, Es un placer para nosotros ser parte de este momento tan
+        Estimados novios, Es un placer para nosotros ser parte de este asdmomento tan
         especial en sus vidas.
         <router-link to="/paquetes" class="text-sky-600 hover:text-black"
           >Ver a Detalle...</router-link
@@ -43,7 +47,9 @@
       <h3 class="text-xl font-bold font-serif mt-2 text-gray-600 bg-neutral-200">
         Varios
       </h3>
-      <p class="text-gray-600 font-serif bg-neutral-100">190 Bs por persona</p>
+      <p class="text-gray-600 font-serif bg-neutral-100 border-2 border-stone-700 m-2">
+        190 Bs por persona
+      </p>
       <p class="text-gray-600 font-serif bg-neutral-100">
         Estimados anfitriones y familia, Es un honor para nosotros ser parte de este
         momento tan especial en sus vidas.

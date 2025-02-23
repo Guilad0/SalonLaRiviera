@@ -23,11 +23,13 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
       />
     </div>
 
-    <div class="relative flex flex-col items-center w-full min-h-screen p-10 bg-gray-100">
+    <div
+      class="relative flex flex-col items-center w-full min-h-screen p-10 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1738768263/textura_LE_upscale_balanced_x4v2_fekn3r.jpg')] bg-cover"
+    >
       <section class="relative w-full max-w-4xl mb-10 text-center">
         <h2
-          class="text-4xl font-bold bg-neutral-200 border-2 border-stone-800 text-stone-800 p-2 rounded-lg shadow"
-          style="font-family: 'Comfortaa', sans-serif;"
+          class="text-4xl font-bold bg-neutral-200 border-2 border-stone-800 text-stone-800 p-2 rounded-lg shadow m-4"
+          style="font-family: 'Comfortaa', sans-serif"
         >
           PAQUETES
         </h2>
@@ -41,7 +43,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
       <section class="relative w-full max-w-4xl mt-10 text-center">
         <h2
           class="text-4xl font-bold bg-neutral-200 border-2 border-neutral-400 text-neutral-500 p-2 rounded-lg shadow"
-          style="font-family: 'Comfortaa', sans-serif;"
+          style="font-family: 'Comfortaa', sans-serif"
         >
           CONCIERTOS
         </h2>
@@ -50,8 +52,8 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
 
       <section class="relative w-full max-w-4xl mt-10 text-center">
         <h2
-          class="text-4xl font-bold bg-neutral-200 border-2 border-neutral-400 text-neutral-500 p-2 rounded-lg shadow"
-          style="font-family: 'Comfortaa', sans-serif;"
+          class="text-4xl font-bold bg-neutral-200 border-2 border-neutral-400 text-neutral-500 p-2 rounded-lg shadow m-4"
+          style="font-family: 'Comfortaa', sans-serif"
         >
           CONFERENCIAS
         </h2>
