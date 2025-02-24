@@ -13,40 +13,27 @@
 
     <div class="container mx-auto px-4 py-6">
       <div class="flex flex-wrap justify-center gap-2 mb-8">
-        <button
-          v-for="category in categories"
-          :key="category"
-          @click="selectedCategory = category"
-          :class="[ 
-            'px-4 py-2 rounded-full transition-all duration-300', 
-            selectedCategory === category 
-              ? 'bg-neutral-400 text-white shadow-lg' 
-              : 'bg-white text-gray-700 hover:bg-blue-50' 
-          ]"
-          style="font-family: 'Comfortaa', sans-serif;"
-        >
+        <button v-for="category in categories" :key="category" @click="selectedCategory = category" :class="[
+          'px-4 py-2 rounded-full transition-all duration-300',
+          selectedCategory === category
+            ? 'bg-neutral-400 text-white shadow-lg'
+            : 'bg-white text-gray-700 hover:bg-blue-50'
+        ]" style="font-family: 'Comfortaa', sans-serif;">
           {{ category }}
         </button>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div
-          v-for="photo in filteredPhotos"
-          :key="photo.id"
+        <div v-for="photo in filteredPhotos" :key="photo.id"
           class="group relative overflow-hidden rounded-lg shadow-lg bg-white hover:shadow-xl transition-all duration-300 cursor-pointer"
-          @click="openLightbox(photo)"
-        >
+          @click="openLightbox(photo)">
           <div class="relative pb-[100%]">
-            <img
-              :src="photo.url"
-              :alt="photo.title"
+            <img :src="photo.url" :alt="photo.title"
               class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
-            />
+              loading="lazy" />
           </div>
           <div
-            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
+            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div class="absolute bottom-0 left-0 right-0 p-4">
               <h3 class="text-white font-medium" style="font-family: 'Comfortaa', sans-serif;">
                 {{ photo.title }}
@@ -58,23 +45,14 @@
           </div>
         </div>
       </div>
-      <div
-        v-if="selectedPhoto"
-        class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
-        @click="closeLightbox"
-      >
+      <div v-if="selectedPhoto" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+        @click="closeLightbox">
         <div class="relative max-w-4xl mx-4" @click.stop>
-          <button
-            @click="closeLightbox"
-            class="absolute -top-10 right-0 text-white hover:text-gray-300 p-2"
-          >
+          <button @click="closeLightbox" class="absolute -top-10 right-0 text-white hover:text-gray-300 p-2">
             <span class="text-3xl">&times;</span>
           </button>
-          <img
-            :src="selectedPhoto.url"
-            :alt="selectedPhoto.title"
-            class="max-h-[80vh] max-w-full object-contain rounded-lg"
-          />
+          <img :src="selectedPhoto.url" :alt="selectedPhoto.title"
+            class="max-h-[80vh] max-w-full object-contain rounded-lg" />
           <div class="text-white mt-4">
             <h3 class="text-xl font-medium" style="font-family: 'Comfortaa', sans-serif;">
               {{ selectedPhoto.title }}
@@ -98,7 +76,7 @@ export default {
       selectedCategory: "Todos",
       searchQuery: "",
       selectedPhoto: null,
-      categories: ["Todos", "Bodas", "Quinceañeras", "Eventos Corporativos", "Fiestas"],
+      categories: ["Todos", "Bodas", "Quinceañeras", "Eventos Corporativos", "Fiestas", "Gastronomía"],
       photos: [
         {
           id: 1,
@@ -164,6 +142,21 @@ export default {
           url:
             "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop",
         },
+        {
+          id: 9,
+          title: "Plato Gourmet",
+          description: "Un delicioso plato servido en nuestro salón",
+          category: "Gastronomía",
+          url: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&auto=format&fit=crop",
+        },
+        {
+          id: 10,
+          title: "Buffet Variado",
+          description: "Un buffet con una variedad de platillos exquisitos",
+          category: "Gastronomía",
+          url: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format&fit=crop",
+        },
+
       ],
     };
   },
@@ -215,7 +208,10 @@ export default {
   font-family: 'Comfortaa', sans-serif;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   font-family: 'Comfortaa', sans-serif;
 }
 

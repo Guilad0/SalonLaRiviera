@@ -2,8 +2,8 @@
 import ChatBot from "@/components/ChatBot.vue";
 import Carrusel from "@/components/Carrusel.vue";
 import CardPaquetes from "@/components/CardPaquetes.vue";
-import CardEventos from "@/components/CardEventos.vue";
-import CardConferencias from "@/components/CardConferencias.vue";
+import CardPaquetesBien from "@/components/CardPaquetesBien.vue";
+import CardGaleria from "@/components/CardGaleria.vue";
 import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
 </script>
 
@@ -25,12 +25,12 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
 
     <div class="relative flex flex-col items-center w-full min-h-screen p-10 bg-gray-100">
       <section class="relative w-full max-w-4xl mb-10 text-center">
-        <h2
+        <!-- <h2
           class="text-4xl font-bold bg-neutral-200 border-2 border-stone-800 text-stone-800 p-2 rounded-lg shadow"
           style="font-family: 'Comfortaa', sans-serif;"
         >
           PAQUETES
-        </h2>
+        </h2> -->
         <CardPaquetes />
       </section>
 
@@ -43,9 +43,9 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
           class="text-4xl font-bold bg-neutral-200 border-2 border-neutral-400 text-neutral-500 p-2 rounded-lg shadow"
           style="font-family: 'Comfortaa', sans-serif;"
         >
-          CONCIERTOS
+          PAQUETES
         </h2>
-        <CardEventos class="flex m-4 max-w-4xl" />
+        <CardPaquetesBien class="flex m-4 max-w-4xl" />
       </section>
 
       <section class="relative w-full max-w-4xl mt-10 text-center">
@@ -53,9 +53,9 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
           class="text-4xl font-bold bg-neutral-200 border-2 border-neutral-400 text-neutral-500 p-2 rounded-lg shadow"
           style="font-family: 'Comfortaa', sans-serif;"
         >
-          CONFERENCIAS
+          GALERIA
         </h2>
-        <CardConferencias />
+        <CardGaleria />
       </section>
 
       <div class="m-4 flex flex-col items-center space-y-4">
