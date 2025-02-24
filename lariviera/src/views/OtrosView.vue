@@ -1,9 +1,7 @@
 <template>
   <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
-    <h1 class="font-bold" style="font-family: 'Mode G', sans-serif; font-size: 20px;">
-      Detalles del Evento de Empresa: {{ paqueteId }}
-    </h1>    
-    <h2 class="text-justify italic text-xs sm:text-sm md:text-base">
+    <h1 class="text-1xl font-[Mode G]">Detalles del Evento de Empresa: {{ paqueteId }}</h1>
+    <h2 class="text-justify italic">
       <p><b>"Estimados organizadores y equipo,</b></p>
 
       Es un honor para nosotros ser parte de su próximo evento. En nombre del
@@ -16,61 +14,66 @@
       acompañarlos en la organización de este importante encuentro."
     </h2>
 
-    <h3 class="underline text-xs sm:text-sm md:text-base">
+    <h3 class="underline">
       A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
       diseñados para cubrir todas las necesidades de su evento empresarial, seminario o
       disertación, garantizando una experiencia profesional y exitosa.
     </h3>
     `
-    <div class="overflow-x-auto">
-      <table class="table-auto w-full border-collapse mt-4 text-xs sm:text-sm md:text-base">
-       
+    <div>
+      <table class="table-auto w-full border-collapse mt-4">
+        <!-- <thead>
+    <tr>
+      <th class="border px-4 py-2">Columna 1</th>
+      <th class="border px-4 py-2">Columna 2</th>
+      <th class="border px-4 py-2">Columna 3</th>
+    </tr>
+  </thead> -->
         <tbody>
           <!-- Fila 1 -->
           <tr>
-            <td class="border px-2 sm:px-3 md:px-4 py-2 text-left align-top">
-              <p class="font-bold">REQURIMENTO DE SALÓN</p>
-              <p>♦ SALÓN AMPLIO AIRE ACONDICIONADO</p>
-              <p>♦ 500 SILLAS TIFFANY</p>
-              <p>♦ MESAS DE APOYO</p>
-              <p>♦ ACCESO A BAÑOS EQUIPADOS</p>
-              <p>♦ AREAS DE JARDIN PARA DESCANSO</p>
+            <td class="border px-4 py-2 text-left align-top">
+              <p class="text-justify italic font-bold">REQURIMENTO DE SALÓN</p>
+              <p class="text-justify italic">♦ SALÓN AMPLIO AIRE ACONDICIONADO</p>
+              <p class="text-justify italic">♦ 500 SILLAS TIFFANY</p>
+              <p class="text-justify italic">♦ MESAS DE APOYO</p>
+              <p class="text-justify italic">♦ ACCESO A BAÑOS EQUIPADOS</p>
+              <p class="text-justify italic">♦ AREAS DE JARDIN PARA DESCANSO</p>
             </td>
 
-            <td class="border px-2 sm:px-3 md:px-4 py-2 text-left align-top">
-              <p class="font-bold">Bs 6000</p>
+            <td class="border px-4 py-2 text-left align-top">
+              <p class="text-justify italic font-bold">Bs 6000</p>
             </td>
           </tr>
           <!-- Fila 2 -->
           <tr>
-            <td class="border px-2 sm:px-3 md:px-4 py-2 text-left align-top">
-              <p class="font-bold">HERRAMIENTAS AUDIOVISUALES</p>
-              <p>♦ PANTALLA LED</p>
-              <p>♦ SONIDO DOS MICRÓFONOS</p>
-              <p>♦ SONIDO DOS MICRÓFONOS</p>
+            <td class="border px-4 py-2 text-left align-top">
+              <p class="text-justify italic font-bold">HERRAMIENTAS AUDIOVISUALES</p>
+              <p class="text-justify italic">♦ PANTALLA LED</p>
+              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS</p>
+              <p class="text-justify italic">♦ SONIDO DOS MICRÓFONOS</p>
             </td>
 
-            <td class="border px-2 sm:px-3 md:px-4 py-2 text-left align-top">
-              <p class="font-bold">Bs 1800</p>
+            <td class="border px-4 py-2 text-left align-top">
+              <p class="text-justify italic font-bold">Bs 1800</p>
             </td>
           </tr>
-          
+          <!-- Fila 3 -->
 
 
         </tbody>
       </table>
       <br><br>
-      <h2 class="text-justify italic text-xs sm:text-sm md:text-base">
-        <b>ADICIONAL:</b></h2>
-      <ul class="text-justify italic text-xs sm:text-sm md:text-base">
+      <h2 class="text-2xl font-bold italic">ADICIONAL:</h2>
+      <ul class="list-disc list-inside space-y-2 mt-2">
         <li class="text-justify">
           Servicio de catering para todo tipo de eventos Censa Gourmet: banquetes,
           servicios de brunch, mesas dulces, mesas saladas, etc. (según requerimiento).
         </li>
       </ul>
 
-      <h2 class="text-justify italic text-xs sm:text-sm md:text-base"><b>EXTRAS:</b></h2>
-      <ul class="text-justify italic text-xs sm:text-sm md:text-base">
+      <h2 class="text-2xl font-bold italic mt-4">EXTRAS:</h2>
+      <ul class="list-disc list-inside space-y-2 mt-2">
         <li class="text-justify">
           Amplificación y sonido ambiental, ajustados según los requerimientos del evento.
         </li>
