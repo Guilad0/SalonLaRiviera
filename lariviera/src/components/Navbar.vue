@@ -6,7 +6,7 @@
       <div class="flex items-center">
         <img src="@/assets/img/EPgold.jpeg" alt="Logo" class="h-10 mr-2 rounded-lg shadow-sm" />
         <router-link to="/"
-          class="text-2xl tailwind-light-font text-black hover:text-gray-500 transition-colors duration-300">
+          class="text-2xl form-control text-black hover:text-gray-500 transition-colors duration-300">
           Salon de Eventos La Riviera
         </router-link>
       </div>

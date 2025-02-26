@@ -102,6 +102,8 @@
         </tr>
       </tbody>
     </table>
+    <button type="button" class="btn btn-primary">Click aquí</button>
+
   </div>
 </template>
 
