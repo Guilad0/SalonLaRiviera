@@ -273,6 +273,7 @@
       />
     </div> -->
   </div>
+  <button type="button" class="btn btn-primary">Click aquí</button>
 </template>
 
 <script>
