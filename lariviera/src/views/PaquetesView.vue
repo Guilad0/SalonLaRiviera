@@ -1,45 +1,46 @@
 <template>
   <div class="font-serif bg-cover">
     <!-- Título principal -->
-    <div class="flex items-center justify-center mt-8 m-5 p-2.5">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl font-serif text-center">
+    <div class="flex items-center justify-center mt-8 mx-5 p-4">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold text-center max-w-lg">
         RESERVA UNA REUNIÓN INICIAL
       </h1>
     </div>
 
-    <div>
-      <!-- Botones para seleccionar la categoría de paquetes -->
-      <div class="flex flex-wrap justify-center gap-2 p-2 border border-neutral-400 bg-neutral-200">
-        <button 
-          v-for="categoria in categories" 
-          :key="categoria.value" 
-          @click="selectedCategory = categoria.value"
-          :class="['px-4 py-2 rounded font-serif', selectedCategory === categoria.value ? 'bg-slate-700 text-white' : 'bg-gray-300']">
-          {{ categoria.label }}
-        </button>
-      </div>
+    <div class="flex flex-wrap justify-center gap-3 p-4">
+      <button v-for="categoria in categories" :key="categoria.value" @click="selectedCategory = categoria.value" :class="[
+        'btn mb-2 mb-md-0 btn-outline-primary px-4 py-2 rounded-pill font-serif transition-all',
+        selectedCategory === categoria.value
+          ? 'btn-primary text-white scale-105'
+          : 'btn-outline-primary'
+      ]">
+        <span>{{ categoria.label }}</span>
+      </button>
+    </div>
 
-      <!-- Contenedor de los paquetes con animación -->
-      <div class="container mt-2">
-        <transition-group name="fade" tag="div" class="row g-4 d-flex justify-content-center">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" v-for="paquete in filteredPackages" :key="paquete.nombre">
-            <div class="card card-block">
-              <h4 class="card-title text-right">
-                <router-link :to="getPaqueteLink(paquete)" class="text-decoration-none">
-                  <i class="material-icons">Ver Detalles</i>
-                </router-link>
-              </h4>
-              <img :src="paquete.image" alt="Paquete imagen" class="img-fluid" />
-              <h5 class="card-title mt-3 mb-3">{{ paquete.nombre }}</h5>
-              <h5 class="card-title mt-3 mb-3">Precio: {{ paquete.precio }} por persona</h5>
-              <p class="card-text">{{ paquete.descripcion }}</p>
-            </div>
+
+
+    <!-- Contenedor de los paquetes con animación -->
+    <div class="container mt-2">
+      <transition-group name="fade" tag="div" class="row g-4 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" v-for="paquete in filteredPackages" :key="paquete.nombre">
+          <div class="card card-block">
+            <h4 class="card-title text-right">
+              <router-link :to="getPaqueteLink(paquete)" class="text-decoration-none">
+                <i class="material-icons">Ver Detalles</i>
+              </router-link>
+            </h4>
+            <img :src="paquete.image" alt="Paquete imagen" class="img-fluid" />
+            <h5 class="card-title mt-3 mb-3">{{ paquete.nombre }}</h5>
+            <h5 class="card-title mt-3 mb-3">Precio: {{ paquete.precio }} por persona</h5>
+            <p class="card-text">{{ paquete.descripcion }}</p>
           </div>
-        </transition-group>
-      </div>
+        </div>
+      </transition-group>
     </div>
   </div>
 </template>
+
 
 
 
@@ -51,7 +52,7 @@ export default {
         { nombre: "Paquete Matrimonial Estandar", precio: "Bs 185", descripcion: "Decoración básica...", image: "https://example.com/image1.jpg", category: "matrimonios" },
         { nombre: "Paquete Matrimonial Gold", precio: "Bs 190", descripcion: "Decoración básica...", image: "https://example.com/image1.jpg", category: "matrimonios" },
         { nombre: "Paquete Matrimonial Platinum", precio: "Bs 220", descripcion: "Decoración básica...", image: "https://example.com/image1.jpg", category: "matrimonios" },
-        { nombre: "Paquete Quince Años Estandar", precio: "Bs 200", descripcion: "Decoración exclusiva...", image: "https://example.com/image2.jpg", category: "quinceanos" },        
+        { nombre: "Paquete Quince Años Estandar", precio: "Bs 200", descripcion: "Decoración exclusiva...", image: "https://example.com/image2.jpg", category: "quinceanos" },
         { nombre: "Paquete Quince Años Gold", precio: "Bs 250", descripcion: "Decoración exclusiva...", image: "https://example.com/image2.jpg", category: "quinceanos" },
         { nombre: "Paquete Quince Años Platinum", precio: "Bs 300", descripcion: "Decoración exclusiva...", image: "https://example.com/image2.jpg", category: "quinceanos" },
         { nombre: "Paquete Eventos Privados Estandar", precio: "Bs 300", descripcion: "Decoración exclusiva...", image: "https://example.com/image3.jpg", category: "eventosprivados" },
@@ -79,12 +80,12 @@ export default {
         matrimonios: {
           "Paquete Matrimonial Estandar": `/boda-estandar/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`,
           "Paquete Matrimonial Gold": `/bodagold/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`,
-          "Paquete Matrimonial Platinum": `/bodaplatinum/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`,          
+          "Paquete Matrimonial Platinum": `/bodaplatinum/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`,
         },
         quinceanos: {
           "Paquete Quince Años Estandar": `/quince-estandar/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`,
           "Paquete Quince Años Gold": `/quinceGold/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`,
-          "Paquete Quince Años Platinum": `/quincePlatinum/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`  
+          "Paquete Quince Años Platinum": `/quincePlatinum/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`
         },
         eventosprivados: {
           "Paquete Eventos Privados Estandar": `/evento-privado-estandar/${paquete.nombre.replace(/\s+/g, '-').toLowerCase()}`,
@@ -196,18 +197,24 @@ export default {
   padding-bottom: 20px;
   padding-left: 15px;
 }
+
 /* Animación Fade */
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-.fade-enter-from, .fade-leave-to {
+
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
   transform: translateY(20px);
 }
+
 .card {
   width: 100%;
-  max-width: 320px; /* Permite mejor adaptación */
-  margin: auto; /* Centra las tarjetas */
+  max-width: 320px;
+  /* Permite mejor adaptación */
+  margin: auto;
+  /* Centra las tarjetas */
 }
-
 </style>
