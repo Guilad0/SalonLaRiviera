@@ -1,9 +1,9 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <div
-      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-stone-700"
+      class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-stone-700 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1738768263/textura_LE_upscale_balanced_x4v2_fekn3r.jpg')]"
     >
-      <img src="@/assets/img/EpEstandar.jpeg" alt="" class="h-48 w-full" />
+      <!-- <img src="@/assets/img/EpEstandar.jpeg" alt="" class="h-48 w-full" /> -->
       <h3 class="text-xl font-bold text-gray-600 font-serif mt-2 bg-neutral-200">
         15 años
       </h3>
@@ -18,7 +18,7 @@
         >
       </p>
     </div>
-    <div
+    <!-- <div
       class="p-6 shadow-lg hover:scale-105 transition-transform duration-600 text-white border-4 border-stone-700"
     >
       <img
@@ -57,7 +57,7 @@
           >Ver a Detalle...</router-link
         >
       </p>
-    </div>
+    </div> -->
   </div>
 </template>
 

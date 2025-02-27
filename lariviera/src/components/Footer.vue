@@ -1,165 +1,123 @@
+<script setup>
+const currentYear = new Date().getFullYear();
+</script>
+
 <template>
-  <footer class="bg-white-900 text-black p-6">
-    <div
-      class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left"
-    >
+  <footer class="bg-black text-white py-10 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
       <div>
-        <h3 class="text-lg font-bold mb-2">Contacto</h3>
-        <a href="https://wa.link/6kuav1" class="text-gray-400">
-          Teléfono: +591 70728805</a
-        >
-        <p class="text-gray-400">Email: JoséMurillo@gmail.com</p>
+        <div class="flex items-center gap-3 mb-4">
+          <img
+            src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
+            alt="logo"
+            class="h-12 rounded-full"
+          />
+          <span class="font-bold text-xl">La Riviera</span>
+        </div>
+        <p class="text-stone-400">
+          El mejor salón de eventos para tus celebraciones especiales.
+        </p>
       </div>
-      <div>
-        <h3 class="text-lg font-bold mb-2">Dirección</h3>
-        <p class="text-gray-400">Dirección: Av. Simón López, Cochabamba</p>
-        <p class="text-gray-400">Cochabamba, Bolivia</p>
+
+      <div class="">
+        <h3 class="font-bold text-lg mb-4">Servicios</h3>
+        <ul class="space-y-2 text-stone-400">
+          <li>
+            <a
+              href="#"
+              class="hover:text-amber-400 transition-colors text-decoration-none text-stone-400"
+              >Bodas</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-amber-400 transition-colors text-decoration-none text-stone-400"
+              >XV Años</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-amber-400 transition-colors text-decoration-none text-stone-400"
+              >Eventos Corporativos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-decoration-none hover:text-amber-400 transition-colors text-stone-400"
+              >Conciertos</a
+            >
+          </li>
+        </ul>
       </div>
+
       <div>
-        <h3 class="text-lg font-bold mb-2">Síguenos</h3>
-        <div class="flex md:justify-start space-x-4">
+        <h3 class="font-bold text-lg mb-4">Síguenos</h3>
+        <div class="flex gap-4">
           <a
-            href="https://www.facebook.com/larivieracentroeeventosyconvenciones"
-            class="text-gray-400 hover:text-sky-700"
+            href="#"
+            class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-amber-500 transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="30"
-              height="30"
-              viewBox="0 0 48 48"
+              width="18"
+              height="18"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              color="oklch(0.709 0.01 56.259)"
             >
-              <linearGradient
-                id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1"
-                x1="9.993"
-                x2="40.615"
-                y1="9.993"
-                y2="40.615"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0" stop-color="#2aa4f4"></stop>
-                <stop offset="1" stop-color="#007ad9"></stop>
-              </linearGradient>
               <path
-                fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)"
-                d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"
-              ></path>
-              <path
-                fill="#fff"
-                d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"
-              ></path>
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
             </svg>
           </a>
-          <a href="#" class="text-gray-400 hover:text-sky-700"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="30"
-              height="30"
-              viewBox="0 0 48 48"
-            >
-              <radialGradient
-                id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1"
-                cx="19.38"
-                cy="42.035"
-                r="44.899"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0" stop-color="#fd5"></stop>
-                <stop offset=".328" stop-color="#ff543f"></stop>
-                <stop offset=".348" stop-color="#fc5245"></stop>
-                <stop offset=".504" stop-color="#e64771"></stop>
-                <stop offset=".643" stop-color="#d53e91"></stop>
-                <stop offset=".761" stop-color="#cc39a4"></stop>
-                <stop offset=".841" stop-color="#c837ab"></stop>
-              </radialGradient>
-              <path
-                fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
-              ></path>
-              <radialGradient
-                id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2"
-                cx="11.786"
-                cy="5.54"
-                r="29.813"
-                gradientTransform="matrix(1 0 0 .6663 0 1.849)"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0" stop-color="#4168c9"></stop>
-                <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
-              </radialGradient>
-              <path
-                fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
-              ></path>
-              <path
-                fill="#fff"
-                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"
-              ></path>
-              <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
-              <path
-                fill="#fff"
-                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"
-              ></path></svg
-          ></a>
-          <a href="#" class="text-gray-400 hover:text-sky-700"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="30"
-              height="30"
-              viewBox="0 0 50 50"
-            >
-              <path
-                d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
-              ></path></svg
-          ></a>
-
-          <a href="https://wa.link/6kuav1">
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-amber-500 transition-colors"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="30"
-              height="30"
-              viewBox="0 0 1024 1024"
-              id="whatsapp"
+              width="18"
+              height="18"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              color="oklch(0.709 0.01 56.259)"
             >
-              <defs>
-                <path
-                  id="b"
-                  d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z"
-                ></path>
-              </defs>
-              <linearGradient
-                id="a"
-                x1="512.001"
-                x2="512.001"
-                y1=".978"
-                y2="1025.023"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop offset="0" stop-color="#61fd7d"></stop>
-                <stop offset="1" stop-color="#2bb826"></stop>
-              </linearGradient>
-              <use xlink:href="#b" fill="url(#a)" overflow="visible"></use>
               <path
-                fill="#FFF"
-                d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z"
-              ></path>
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-amber-500 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              color="oklch(0.709 0.01 56.259)"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              />
             </svg>
           </a>
         </div>
       </div>
     </div>
-    <div class="text-center text-gray-500 mt-4">
-      © 2025 Salon de eventos La Riviera. Todos los derechos reservados.
+
+    <div
+      class="max-w-7xl mx-auto mt-8 pt-8 border-t border-stone-800 text-stone-500 text-center"
+    >
+      <p>
+        &copy; {{ currentYear }} Salón de Eventos La Riviera. Todos los derechos
+        reservados.
+      </p>
     </div>
   </footer>
 </template>
-
-<script></script>
-
-<style></style>

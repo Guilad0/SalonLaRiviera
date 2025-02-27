@@ -1,5 +1,5 @@
-import './assets/styles/main.css'; // Este archivo importa base.css internamente
-import "@/assets/styles/fonts.css"; // Si tienes un archivo específico de fuentes, mantén esta línea.
+import './assets/styles/main.css'; 
+
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
