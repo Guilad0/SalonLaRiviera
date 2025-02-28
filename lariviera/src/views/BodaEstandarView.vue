@@ -2,7 +2,7 @@
    <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
     <h1 class="text-1xl font-[Mode G]">Detalles del Paquete Estándar: {{ paqueteId }}</h1>
 
-    <h2 class="text-justify italic">
+    <h2 class="text-justify italic carta">
       "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial
       en sus vidas. En nombre del <b>Salón de Eventos La Riviera</b>, nos especializamos
       en hacer de cada boda un evento único e inolvidable, cuidando cada detalle para que
@@ -20,7 +20,7 @@
 
     <div>
       <table class="table-auto w-full border-collapse mt-4">
-        <tbody>
+        <tbody >
           <!-- Fila 1 -->
           <tr>
             <td class="border px-4 py-2 text-left align-top">
@@ -124,7 +124,7 @@
         <tr>
           <td class="border px-4 py-2">Paquete Estándar</td>
           <td class="border px-4 py-2">
-            <input type="number" v-model="cantidad" min="0" class="input-cantidad" />
+            <input type="number" v-model="cantidad" min="0" class="cantidad-personas" />
           </td>
           <td class="border px-4 py-2">{{ precioUnitario }} Bs</td>
           <td class="border px-4 py-2">{{ total }} Bs</td>
@@ -155,6 +155,10 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Great+Vibes&display=swap');
+
+
+/* El resto de los estilos */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -185,9 +189,111 @@ tr:nth-child(even) {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para la tabla */
+.table-auto {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+th {
+  background: #1b1e24;
+  color: #D5DDE5;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color: #666B85;
+  font-size: 16px;
+}
+
+tr:hover td {
+  background: #4E5066;
+  color: #FFFFFF;
+}
+
+tr:nth-child(odd) td {
+  background: #EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+  background: #4E5066;
+}
+
+td {
+  background: #FFFFFF;
+  padding: 16px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 16px;
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+td[colspan="3"] {
+  background: #f9f9f9;
+  font-weight: bold;
+}
+
+.cantidad-personas {
+  color: red;
+  font-weight: bold;
+  border: 2px solid red;
+  padding: 20px;
+}
+
 h1 {
-  font-family: 'Mode G', serif;
-  font-size: 2.3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+p, td {
+  font-family: 'Lora', serif;
+}
+
+.carta {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
 }
 </style>
-
