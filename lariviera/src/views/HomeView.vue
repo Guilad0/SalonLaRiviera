@@ -76,7 +76,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
           <CardPaquetes />
         </div>
       </section>
-      <section id="galeria" class="py-20 px-6 bg-stone-800">
+      <section id="galeria" class="py-20 px-6 bg-stone-900">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -91,7 +91,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
-              Próximos Eventos
+              Nuestros Eventos
             </h2>
             <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
           </div>
@@ -223,6 +223,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #000000;
 }
 </style>

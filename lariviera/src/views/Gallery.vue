@@ -1,11 +1,14 @@
 <template>
   <div class="min-h-screen bg-gray-100">
-    <header class="bg-white shadow-md py-6">
+    <header class="shadow-md py-6 bg-stone-900">
       <div class="container mx-auto px-4">
-        <h1 class="text-3xl md:text-4xl font-[Comfortaa] text-gray-800 text-center">
+        <h1 class="text-3xl md:text-4xl font-[Comfortaa] text-white text-center">
           Galería de Eventos
         </h1>
-        <p class="text-center text-gray-600 mt-2" style="font-family: 'Comfortaa', sans-serif;">
+        <p
+          class="text-center text-stone-400 mt-2"
+          style="font-family: 'Comfortaa', sans-serif"
+        >
           Capturando momentos especiales
         </p>
       </div>
@@ -17,13 +20,13 @@
           v-for="category in categories"
           :key="category"
           @click="selectedCategory = category"
-          :class="[ 
-            'px-4 py-2 rounded-full transition-all duration-300', 
-            selectedCategory === category 
-              ? 'bg-neutral-400 text-white shadow-lg' 
-              : 'bg-white text-gray-700 hover:bg-blue-50' 
+          :class="[
+            'px-4 py-2 rounded-full transition-all duration-300',
+            selectedCategory === category
+              ? 'bg-amber-500 text-white shadow-lg'
+              : 'bg-white text-gray-700 hover:bg-blue-50',
           ]"
-          style="font-family: 'Comfortaa', sans-serif;"
+          style="font-family: 'Comfortaa', sans-serif"
         >
           {{ category }}
         </button>
@@ -48,10 +51,16 @@
             class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
             <div class="absolute bottom-0 left-0 right-0 p-4">
-              <h3 class="text-white font-medium" style="font-family: 'Comfortaa', sans-serif;">
+              <h3
+                class="text-white font-medium"
+                style="font-family: 'Comfortaa', sans-serif"
+              >
                 {{ photo.title }}
               </h3>
-              <p class="text-gray-200 text-sm" style="font-family: 'Comfortaa', sans-serif;">
+              <p
+                class="text-gray-200 text-sm"
+                style="font-family: 'Comfortaa', sans-serif"
+              >
                 {{ photo.description }}
               </p>
             </div>
@@ -76,10 +85,10 @@
             class="max-h-[80vh] max-w-full object-contain rounded-lg"
           />
           <div class="text-white mt-4">
-            <h3 class="text-xl font-medium" style="font-family: 'Comfortaa', sans-serif;">
+            <h3 class="text-xl font-medium" style="font-family: 'Comfortaa', sans-serif">
               {{ selectedPhoto.title }}
             </h3>
-            <p class="text-gray-300" style="font-family: 'Comfortaa', sans-serif;">
+            <p class="text-gray-300" style="font-family: 'Comfortaa', sans-serif">
               {{ selectedPhoto.description }}
             </p>
           </div>
@@ -103,10 +112,10 @@ export default {
         {
           id: 1,
           title: "Boda Romántica",
-          description: "Ceremonia al atardecer en jardín",
+          description: "Ceremonia romantica en nuestro ambiente",
           category: "Bodas",
           url:
-            "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/IMG-20180926-WA0019_oiwq7y.jpg",
         },
         {
           id: 2,
@@ -114,7 +123,7 @@ export default {
           description: "Celebración de XV años",
           category: "Quinceañeras",
           url:
-            "https://images.unsplash.com/photo-1674574124649-778f9afc0e9c?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082151/479487023_1142232350677854_5400312498081089072_n_xenukc.jpg",
         },
         {
           id: 3,
@@ -122,7 +131,7 @@ export default {
           description: "Evento corporativo anual",
           category: "Eventos Corporativos",
           url:
-            "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082087/IMG-20180829-WA0009_jq2hku.jpg",
         },
         {
           id: 4,
@@ -130,7 +139,7 @@ export default {
           description: "Cena de gala anual",
           category: "Fiestas",
           url:
-            "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082087/IMG_20210403_121803_317_zlmnxc.jpg",
         },
         {
           id: 5,
@@ -138,7 +147,7 @@ export default {
           description: "Ceremonia junto al mar",
           category: "Bodas",
           url:
-            "https://images.unsplash.com/photo-1544592732-0a2d16c2a30f?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082039/SaveClip.App_61781313_146143013216037_8931770470732746958_n_hjgptn.jpg",
         },
         {
           id: 6,
@@ -146,7 +155,7 @@ export default {
           description: "Celebración contemporánea",
           category: "Quinceañeras",
           url:
-            "https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1738349307/15Platinum_ysnz5h.jpg",
         },
         {
           id: 7,
@@ -154,7 +163,7 @@ export default {
           description: "Conferencia internacional",
           category: "Eventos Corporativos",
           url:
-            "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082119/IMG-20180912-WA0017_td0q2q.jpg",
         },
         {
           id: 8,
@@ -162,7 +171,7 @@ export default {
           description: "Celebración universitaria",
           category: "Fiestas",
           url:
-            "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&auto=format&fit=crop",
+            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082119/IMG-20180827-WA0020_aapitq.jpg",
         },
       ],
     };
@@ -212,15 +221,18 @@ export default {
 <style scoped>
 /* Font Comfortaa applied to all text elements */
 * {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
-h1, h2, h3, p {
-  font-family: 'Comfortaa', sans-serif;
+h1,
+h2,
+h3,
+p {
+  font-family: "Comfortaa", sans-serif;
 }
 
 /* Button styling */
 button {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 </style>
