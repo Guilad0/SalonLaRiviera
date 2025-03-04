@@ -1,15 +1,10 @@
 <template>
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 font-serif">
-    <!-- Título -->
-    <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-4" style="font-family: 'Mode G', sans-serif;">
-      Detalles del Evento de Empresa: {{ paqueteId }}
-    </h1>
+  <div class="overflow-x-auto w-full font-sans">
+    <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
+      <h1 class="text-1xl font-[Mode G] text-center">Detalles del Evento de Empresa: {{ paqueteId }}</h1>
 
-    <!-- Introducción -->
-    <div class="text-sm sm:text-base text-justify italic mb-6 space-y-4">
-      <p><b>"Estimados organizadores y equipo,</b></p>
-      <p>
-        Es un honor para nosotros ser parte de su próximo evento. En nombre del
+      <h2 class="text-justify italic carta px-4">
+        "Estimados organizadores y equipo, Es un honor para nosotros ser parte de su próximo evento. En nombre del
         <b>Salón de Eventos La Riviera</b>, nos especializamos en crear experiencias
         memorables, brindando un servicio impecable y cuidando cada detalle para garantizar
         el éxito de su reunión. A continuation, les presentamos nuestra propuesta de
@@ -17,78 +12,93 @@
         corporativo, seminario o disertación una experiencia profesional y enriquecedora.
         Quedamos atentos a cualquier consulta o ajuste que deseen realizar. Será un placer
         acompañarlos en la organización de este importante encuentro."
-      </p>
-    </div>
+      </h2>
 
-    <!-- Subtítulo -->
-    <h3 class="text-base sm:text-lg underline mb-6">
-      A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
-      diseñados para cubrir todas las necesidades de su evento empresarial, seminario o
-      disertación, garantizando una experiencia profesional y exitosa.
-    </h3>
+      <h3 class="underline text-center carta1 px-4">
+        A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
+        diseñados para cubrir todas las necesidades de su evento empresarial, seminario o
+        disertación, garantizando una experiencia profesional y exitosa.
+      </h3>
 
-    <!-- Tabla de servicios -->
-    <div class="overflow-x-auto">
-      <table class="w-full border-collapse mt-4 text-sm sm:text-base">
-        <tbody>
-          <!-- Fila 1 -->
-          <tr class="border-b">
-            <td class="px-4 py-3 text-left align-top">
-              <p class="text-justify italic font-bold">REQUERIMIENTO DE SALÓN</p>
-              <ul class="list-none space-y-1 mt-1">
-                <li class="text-justify italic">♦ SALÓN AMPLIO AIRE ACONDICIONADO</li>
-                <li class="text-justify italic">♦ 200 SILLAS TIFFANY</li>
-                <li class="text-justify italic">♦ MESAS DE APOYO</li>
-                <li class="text-justify italic">♦ ACCESO A BAÑOS EQUIPADOS</li>
-                <li class="text-justify italic">♦ ÁREAS DE JARDÍN PARA DESCANSO</li>
-              </ul>
-            </td>
-            <td class="px-4 py-3 text-left align-top font-bold italic w-28 sm:w-32">
-              Bs 6000
-            </td>
-          </tr>
-          <!-- Fila 2 -->
-          <tr class="border-b">
-            <td class="px-4 py-3 text-left align-top">
-              <p class="text-justify italic font-bold">HERRAMIENTAS AUDIOVISUALES</p>
-              <ul class="list-none space-y-1 mt-1">
-                <li class="text-justify italic">♦ PANTALLA LED</li>
-                <li class="text-justify italic">♦ SONIDO DOS MICRÓFONOS</li>
-              </ul>
-            </td>
-            <td class="px-4 py-3 text-left align-top font-bold italic w-28 sm:w-32">
-              Bs 1800
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full border-collapse mt-4">
+          <tbody>
+            <!-- Fila una -->
+            <tr>
+              <td colspan="3" class="border px-4 py-2 text-left align-top">
+                <p class="text-justify italic font-bold">REQUERIMIENTO DE SALÓN</p>
+                <ul>
+                  <li class="text-justify italic">♦ SALÓN AMPLIO AIRE ACONDICIONADO</li>
+                  <li class="text-justify italic">♦ 200 SILLAS TIFFANY</li>
+                  <li class="text-justify italic">♦ MESAS DE APOYO</li>
+                  <li class="text-justify italic">♦ ACCESO A BAÑOS EQUIPADOS</li>
+                  <li class="text-justify italic">♦ ÁREAS DE JARDÍN PARA DESCANSO</li>
+                </ul>
 
-    <!-- Sección Adicional -->
-    <div class="mt-8">
-      <h2 class="text-xl sm:text-2xl font-bold italic mb-4">ADICIONAL:</h2>
-      <ul class="list-disc list-inside space-y-2 text-sm sm:text-base">
-        <li class="text-justify">
-          Servicio de catering para todo tipo de eventos Censa Gourmet: banquetes,
-          servicios de brunch, mesas dulces, mesas saladas, etc. (según requerimiento).
-        </li>
-      </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 text-right align-top font-bold italic w-1/6 whitespace-nowrap">
+                6000 Bs.
+              </td>
+            </tr>
+            <!-- Fila 2 -->
+            <tr>
+              <td colspan="3" class="border px-4 py-2 text-left align-top">
+                <p class="text-justify italic font-bold">HERRAMIENTAS AUDIOVISUALES</p>
+                <ul>
+                  <li class="text-justify italic">♦ PANTALLA LED</li>
+                  <li class="text-justify italic">♦ SONIDO DOS MICRÓFONOS</li>
+                </ul>
+
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 text-right align-top font-bold italic w-1/4">
+                1800 Bs.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Sección Adicional -->
+
+      <br /><br />
+      <h3 class="text-center carta1 px-4">
+        <p class="text-justify italic font-bold">ADICIONAL: </p>
+        <ul>
+          <li class="text-justify italic">♦ Servicio de catering para todo tipo de eventos Censa Gourmet: banquetes,
+            servicios de brunch, mesas dulces, mesas saladas, etc. (según requerimiento).</li>
+
+        </ul>
+      </h3>
 
       <!-- Sección Extras -->
-      <h2 class="text-xl sm:text-2xl font-bold italic mt-6 mb-4">EXTRAS:</h2>
-      <ul class="list-disc list-inside space-y-2 text-sm sm:text-base">
-        <li class="text-justify">
-          Amplificación y sonido ambiental, ajustados según los requerimientos del evento.
-        </li>
-        <li class="text-justify">
-          Iluminación personalizada, adaptada a las necesidades del evento.
-        </li>
-        <li class="text-justify">
-          Data display, disponible bajo planificación previa con el coordinador de sonido.
-        </li>
-      </ul>
+
+      <br /><br />
+      <h3 class="text-center carta1 px-4">
+        <p class="text-justify italic font-bold">EXTRAS: </p>
+        <ul>
+          <li class="text-justify italic">♦ Amplificación y sonido ambiental, ajustados según los requerimientos del
+            evento.</li>
+          <li class="text-justify italic">♦ Iluminación personalizada, adaptada a las necesidades del evento.</li>
+          <li class="text-justify">
+            ♦ Data display, disponible bajo planificación previa con el coordinador de sonido.
+          </li>
+        </ul>
+      </h3>
+      <br />
+
+
+
+
+
+
+
     </div>
   </div>
+
 </template>
 
 <script>
@@ -97,7 +107,7 @@ export default {
   data() {
     return {
       cantidad: 0,
-      precioUnitario: 190,
+      precioUnitario: 185,
     };
   },
   computed: {
@@ -112,10 +122,131 @@ export default {
 </script>
 
 <style scoped>
-/* Solo estilos específicos que no cubre Tailwind */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Great+Vibes&display=swap');
 
-body {
-  font-family: 'Comfortaa', sans-serif;
+.font-sans {
+  font-family: sans-serif;
+}
+
+.table-auto {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #1b1e24;
+  color: #D5DDE5;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover td {
+  background: rgb(66, 66, 66);
+  color: #FFFFFF;
+}
+
+.cantidad-personas {
+  width: 100%;
+  text-align: center;
+  border: 2px solid red;
+  padding: 5px;
+}
+
+
+@media (max-width: 480px) {
+
+  .responsive-th,
+  .responsive-td {
+    font-size: 10px;
+    padding: 4px;
+  }
+
+  .responsive-input {
+    width: 40px;
+    /* Ajuste adicional para pantallas muy pequeñas */
+    font-size: 9px;
+    padding: 2px;
+  }
+}
+
+
+h1,
+h2,
+h3 {
+  /* font-family: 'Playfair Display', serif; */
+  font-weight: 700;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.carta1 {
+  font-size: 1.5rem;
+}
+
+.carta {
+  /* font-family: 'Great Vibes', cursive; */
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .table-auto {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .carta {
+    font-size: 1.2rem;
+  }
+
+  .table-auto tbody tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table-auto tbody td {
+    width: 100%;
+    text-align: left;
+  }
+
+  .table-auto tbody td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.recuadro {
+
+  color: red;
+  border: red 2px solid;
 }
 </style>

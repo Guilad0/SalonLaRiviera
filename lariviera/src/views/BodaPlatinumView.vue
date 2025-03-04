@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-auto w-full">
+  <div class="overflow-x-auto w-full font-sans">
     <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
       <h1 class="text-1xl font-[Mode G] text-center">Detalles del Paquete Platinum: {{ paqueteId }}</h1>
 
@@ -13,7 +13,7 @@
         consulta o ajuste que deseen realizar. Será un honor acompañarlos en este gran día."
       </h2>
 
-      <h3 class="underline text-center px-4">
+      <h3 class="underline text-center carta1 px-4">
         A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
         diseñados para cubrir todas las necesidades de su boda y asegurar que sea un evento
         memorable.
@@ -169,6 +169,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Great+Vibes&display=swap');
 
+.font-sans {
+  font-family: sans-serif;
+}
+
 .table-auto {
   max-width: 100%;
   overflow-x: auto;
@@ -225,7 +229,7 @@ tr:hover td {
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
   font-weight: 700;
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -233,13 +237,16 @@ h3 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .carta {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
+  /* font-family: 'Great Vibes', cursive; */
+  font-size: 1.5rem;
   text-align: center;
+}
+.carta1 {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
