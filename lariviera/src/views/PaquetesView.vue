@@ -9,14 +9,15 @@
 
     <div class="flex flex-wrap justify-center gap-3 p-4">
       <button v-for="categoria in categories" :key="categoria.value" @click="selectedCategory = categoria.value" :class="[
-        'btn mb-2 mb-md-0 btn-outline-primary px-4 py-2 rounded-pill font-serif transition-all',
+        'mb-2 md:mb-0 px-4 py-2 rounded-full font-serif transition-all duration-200',
         selectedCategory === categoria.value
-          ? 'btn-primary text-white scale-105'
-          : 'btn-outline-primary'
+          ? 'bg-gray-700 text-white scale-105 shadow-md'
+          : 'text-gray-700 border border-gray-300 hover:bg-gray-100 bg-transparent'
       ]">
         <span>{{ categoria.label }}</span>
       </button>
     </div>
+
 
 
 
