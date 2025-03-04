@@ -27,11 +27,15 @@ const toggleMenu = () => {
         <img
           src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
           alt="logo"
-          class="h-10 sm:h-14 rounded-full border-2 border-white/20 shadow-lg"
+          class="h-10 sm:h-14 rounded-full border-2 border-gray-200 shadow-lg"
           onclick="window.location.href='/'"
           style="cursor: pointer"
         />
-        <span class="font-semibold text-white tracking-wider">LA RIVIERA</span>
+        <router-link
+          to="/"
+          class="font-semibold text-gray-100 tracking-wider text-decoration-none hover:text-amber-400"
+          >LA RIVIERA</router-link
+        >
       </div>
 
       <div class="hidden md:flex gap-8 text-white/90">

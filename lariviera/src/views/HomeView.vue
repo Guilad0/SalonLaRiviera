@@ -21,16 +21,22 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         />
         <div class="absolute inset-0 bg-black/50"></div>
       </div>
-
+      <img
+        src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
+        alt="logo"
+        class="h-48 w-48 sm:h-60 sm:w-60 hidden rounded-full absolute left-60 bottom-20 opacity-80 animate-fadeInDrop"
+      />
       <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6">
+        <h1
+          class="text-4xl md:text-6xl lg:text-7xl text-white font-bold tle mb-6 animate-fadeInDrop"
+        >
           SALÓN DE EVENTOS <span class="text-amber-400">LA RIVIERA</span>
         </h1>
-        <p class="text-white/80 text-xl mb-8 max-w-2xl mx-auto">
+        <p class="text-white/80 text-xl mb-8 max-w-2xl mx-auto animate-fadeInDrop">
           El lugar perfecto para celebrar tus momentos más importantes con elegancia y
           distinción
         </p>
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-wrap justify-center gap-4 animate-fadeInDrop">
           <a
             href="#paquetes"
             class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-black font-medium rounded-lg transition-colors text-decoration-none"
@@ -65,10 +71,13 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
     </section>
 
     <main class="bg-gradient-to-b from-stone-100 to-stone-200">
-      <section id="paquetes" class="py-20 px-6">
+      <section
+        id="paquetes"
+        class="py-20 px-6 bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover"
+      >
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
               Nuestros Paquetes
             </h2>
             <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
@@ -87,10 +96,13 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
           <Carrusel class="w-full rounded-xl overflow-hidden shadow-2xl" />
         </div>
       </section>
-      <section id="eventos" class="py-20 px-6">
+      <section
+        id="eventos"
+        class="py-20 px-6 bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover"
+      >
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
               Nuestros Eventos
             </h2>
             <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
@@ -98,12 +110,10 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
           <CardEventos />
         </div>
       </section>
-      <section class="py-20 px-6 bg-gradient-to-b from-stone-200 to-stone-300">
+      <section class="py-20 px-6 bg-stone-800">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
-              Conferencias
-            </h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Conferencias</h2>
             <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
           </div>
           <CardConferencias />
@@ -224,5 +234,19 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
+}
+@keyframes fadeInDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInDrop {
+  animation: fadeInDrop 2.5s ease-out;
 }
 </style>
