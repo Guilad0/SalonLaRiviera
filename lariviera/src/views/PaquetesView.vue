@@ -1,13 +1,13 @@
 <template>
-  <div class="font-serif bg-cover">
+  <div class="font-sans bg-cover">
     <!-- Título principal -->
     <div class="flex items-center justify-center mt-8 mx-5 p-4">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold text-center max-w-lg">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-sans font-semibold text-center max-w-lg">
         RESERVA UNA REUNIÓN INICIAL
       </h1>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-3 p-4">
+    <div class="flex flex-wrap justify-center gap-3 p-4 ">
       <button v-for="categoria in categories" :key="categoria.value" @click="selectedCategory = categoria.value" :class="[
         'mb-2 md:mb-0 px-4 py-2 rounded-full font-serif transition-all duration-200',
         selectedCategory === categoria.value

@@ -1,9 +1,9 @@
 <template>
-  <div class="overflow-x-auto w-full font-sans">
+  <div class="overflow-x-auto w-full font-sans bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover">
     <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
       <h1 class="text-1xl font-[Mode G] text-center">Detalles del Paquete Gold: {{ paqueteId }}</h1>
 
-      <h2 class="text-justify italic carta px-4">
+      <h2 class="text-justify  carta px-4">
         "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial
         en sus vidas. En nombre del <b>Salón de Eventos La Riviera</b>, nos especializamos
         en hacer de cada boda un evento único e inolvidable, cuidando cada detalle para que
@@ -19,8 +19,8 @@
         memorable.
       </h3>
 
-      <div class="overflow-x-auto">
-        <table class="table-auto w-full border-collapse mt-4">
+      <div class="overflow-x-auto ">
+        <table class="table-auto w-full border-collapse mt-4 ">
           <tbody>
             <tr>
               <td class="border px-4 py-2 text-left align-top">
@@ -116,19 +116,19 @@
             </thead>
             <tbody>
               <tr class="border-b">
-                <td class="px-4 py-2 text-sm text-gray-600">Cantidad de personas</td>
+                <td class="px-4 py-2 text-sm text-white">Cantidad de personas</td>
                 <td class="px-4 py-2 text-sm text-black font-bold text-600 recuadro">
                   <input type="number" v-model="cantidad" min="0"
                     class="w-full border rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </td>
               </tr>
               <tr class="border-b">
-                <td class="px-4 py-2 text-sm text-gray-600">Precio Unitario</td>
-                <td class="px-4 py-2 text-sm">{{ precioUnitario }} Bs</td>
+                <td class="px-4 py-2 text-sm text-white">Precio Unitario</td>
+                <td class="px-4 py-2 text-sm text-white">{{ precioUnitario }} Bs</td>
               </tr>
               <tr>
-                <td class="px-4 py-2 text-sm text-gray-600">Total</td>
-                <td class="px-4 py-2 text-sm font-semibold">{{ total }} Bs</td>
+                <td class="px-4 py-2 text-base text-white">Total</td>
+                <td class="px-4 py-2 text-base font-semibold text-white">{{ total }} Bs</td>
               </tr>
             </tbody>
           </table>
@@ -173,6 +173,7 @@ export default {
 .table-auto {
   max-width: 100%;
   overflow-x: auto;
+  background: white;
 }
 
 th,
@@ -189,13 +190,17 @@ th {
   font-weight: 500;
 }
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
+tr:nth-child(even):hover td {
+  background: rgb(78, 80, 102);
+  /* Gris oscuro */
+  color: #FFFFFF;
 }
 
-tr:hover td {
-  background: #4E5066;
-  color: #FFFFFF;
+tr:nth-child(odd):hover td {
+  background: rgb(251, 191, 36);
+  /* Amber-400 */
+  color: #000000;
+  /* Para que el texto sea visible en amarillo */
 }
 
 .cantidad-personas {
@@ -228,7 +233,7 @@ h2,
 h3 {
   /* font-family: 'Playfair Display', serif; */
   font-weight: 700;
-  color: #333;
+  color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
 }

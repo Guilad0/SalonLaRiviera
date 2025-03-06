@@ -1,9 +1,10 @@
 <template>
-  <div class="overflow-x-auto w-full font-sans">
+   <div
+    class="overflow-x-auto w-full font-sans bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover">
     <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
       <h1 class="text-1xl font-[Mode G] text-center">Detalles del Evento de Empresa: {{ paqueteId }}</h1>
 
-      <h2 class="text-justify italic carta px-4">
+      <h2 class="text-justify  carta px-4">
         "Estimados organizadores y equipo, Es un honor para nosotros ser parte de su próximo evento. En nombre del
         <b>Salón de Eventos La Riviera</b>, nos especializamos en crear experiencias
         memorables, brindando un servicio impecable y cuidando cada detalle para garantizar
@@ -131,6 +132,7 @@ export default {
 .table-auto {
   max-width: 100%;
   overflow-x: auto;
+  background: white;
 }
 
 th,
@@ -147,13 +149,17 @@ th {
   font-weight: 500;
 }
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
+tr:nth-child(even):hover td {
+  background: rgb(78, 80, 102);
+  /* Gris oscuro */
+  color: #FFFFFF;
 }
 
-tr:hover td {
-  background: rgb(66, 66, 66);
-  color: #FFFFFF;
+tr:nth-child(odd):hover td {
+  background: rgb(251, 191, 36);
+  /* Amber-400 */
+  color: #000000;
+  /* Para que el texto sea visible en amarillo */
 }
 
 .cantidad-personas {
@@ -186,7 +192,7 @@ h2,
 h3 {
   /* font-family: 'Playfair Display', serif; */
   font-weight: 700;
-  color: #333;
+  color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   letter-spacing: 2px;
 }
