@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-serif font-bold text-stone-800 mb-8 text-center">
+    <h2 class="text-3xl font-serif font-bold text-white mb-8 text-center">
       Eventos Anteriores
     </h2>
 

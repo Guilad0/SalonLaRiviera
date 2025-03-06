@@ -120,7 +120,7 @@
       </div>
 
       <br /><br />
-      <h3 class="text-justify italic font-bold text-center px-4">
+      <h3 class="italic font-bold text-center px-4">
         Calcula el Costo Total según el Número de Invitados, previo reunión con el
         coordinador
       </h3>

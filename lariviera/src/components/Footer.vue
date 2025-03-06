@@ -57,7 +57,7 @@ const currentYear = new Date().getFullYear();
         <h3 class="font-bold text-lg mb-4">Síguenos</h3>
         <div class="flex gap-4">
           <a
-            href="#"
+            href="https://www.facebook.com/larivieracentroeeventosyconvenciones?mibextid=rS40aB7S9Ucbxw6v"
             class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-amber-500 transition-colors"
           >
             <svg
@@ -74,7 +74,7 @@ const currentYear = new Date().getFullYear();
             </svg>
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/riviera.centro.eventos?igsh=YzljYTk1ODg3Zg==q"
             class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-amber-500 transition-colors"
           >
             <svg
@@ -91,7 +91,7 @@ const currentYear = new Date().getFullYear();
             </svg>
           </a>
           <a
-            href="#"
+            href="https://vm.tiktok.com/ZMBdW8RLd/"
             class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-amber-500 transition-colors"
           >
             <svg
