@@ -1,6 +1,6 @@
 <template>
   <div
-    class="font-sans bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover">
+    class="font-sans bg-[url(https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg)] bg-cover">
     <div class="flex items-center justify-center mt-8 mx-5 p-4">
       <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center max-w-lg text-white">
         REVISA EL PAQUETE DE TU EVENTO

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="overflow-x-auto w-full font-sans bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover"
+    class="overflow-x-auto w-full font-sans bg-[url(https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg)] bg-cover"
   >
     <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
       <h1 class="text-1xl font-[Mode G] text-center">Detalles del Paquete Estándar: {{ paqueteId }}</h1>
