@@ -157,7 +157,7 @@ export default {
   data() {
     return {
       cantidad: 0,
-      precioUnitario: 150,
+      precioUnitario: 160,
     };
   },
   computed: {
