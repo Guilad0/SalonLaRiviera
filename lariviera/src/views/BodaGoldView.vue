@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-auto w-full font-sans bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover">
+  <div class="overflow-x-auto w-full font-sans bg-[url(https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg)] bg-cover">
     <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
       <h1 class="text-1xl font-[Mode G] text-center">Detalles del Paquete Gold: {{ paqueteId }}</h1>
 
@@ -23,15 +23,15 @@
         <table class="table-auto w-full border-collapse mt-4 ">
           <tbody>
             <tr>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Brindis</p>
                 <p class="text-justify italic">• Cerezer</p>
               </td>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Saladitos</p>
                 <p class="text-justify italic">• Nachos c/palta</p>
               </td>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Plato Servido</p>
                 <p class="text-justify italic">• Cena dos tipos de carne a elección</p>
                 <p class="text-justify italic">• Dos guarniciones  a eleccion</p>
@@ -40,7 +40,7 @@
             </tr>
             <!-- Fila 2 -->
             <tr>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Bebidas en mesa con alcohol (2)</p>
                 <p class="text-justify italic">• Whisky de litro. J.W/Old etq.</p>
                 <p class="text-justify italic">• Ron Carta Vieja </p>
@@ -48,11 +48,11 @@
                 <p class="text-justify italic">• Casa Real Negro</p>
 
               </td>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)</p>
                 <p class="text-justify italic">• Gaseosas /hielo/limón/agua</p>
               </td>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Fondeu de chocolate</p>
                 <p class="text-justify italic">• Frutas de temporada</p>
                 <p class="text-justify italic">• Mashmelos</p>                
@@ -60,18 +60,18 @@
             </tr>
              <!-- Fila 3 -->
              <tr>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Montaje</p>
                 <p class="text-justify italic">• Mesas, sillas tifany</p>
                 <p class="text-justify italic">• Vajilla, cristalería</p>
                 <p class="text-justify italic">• Cubertería</p>
               </td>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Saladitos</p>
                 <p class="text-justify italic">• Vajilla, cristalería.</p>
                 <p class="text-justify italic">• Cubertería.</p>
               </td>
-              <td class="border px-4 py-2 text-left align-top">
+              <td class="border px-4 py-2 text-left align-top min-w-[200px] personal-atencion">
                 <p class="text-justify italic font-bold">Personal de atención</p>
                 <p class="text-justify italic">• Coordinador de Eventos</p>
                 <p class="text-justify italic">• Garzones</p>
@@ -81,7 +81,7 @@
             </tr>
              <!-- Fila sola -->
              <tr>
-              <td colspan="3" class="border px-4 py-2 text-left align-top">
+              <td colspan="3" class="border px-4 py-2 text-left align-top detalles-plato">
                 <p class="text-justify italic font-bold">Detalles del plato servido</p>              
               
                 <p class="text-justify italic font-bold">Saladitos</p>
@@ -272,7 +272,8 @@ h1 {
     font-size: 1.2rem;
   }
 
-  .table-auto tbody tr {
+ /* Mantener el diseño original para la mayoría de las celdas */
+ .table-auto tbody tr {
     display: flex;
     flex-direction: column;
   }
@@ -282,11 +283,20 @@ h1 {
     text-align: left;
   }
 
-  .table-auto tbody td:before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
+  /* Ajuste específico para "Personal de atención" */
+  .personal-atencion {
+    white-space: normal; /* Permitir que el texto se envuelva */
+    min-width: 0; /* Evitar que fuerce un ancho excesivo */
+    max-width: 100%; /* Limitar al ancho del contenedor */
+  }
+
+  /* Ajuste específico para "Detalles del plato servido" */
+  .detalles-plato {
+    display: block;
+    width: 100%;
+    white-space: normal; /* Permitir que el texto se envuelva */
+    min-width: 0;
+    max-width: 100%;
   }
 }
 
