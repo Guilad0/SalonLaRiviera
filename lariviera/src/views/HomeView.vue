@@ -111,9 +111,9 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         </div>
       </section>
 
-      <section class="py-20 px-6 bg-stone-800" id="conferencias">
+      <section class="py-20 px-6 bg-stone-900" id="conferencias">
         <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-12">
+          <div class="text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Conferencias</h2>
             <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
           </div>

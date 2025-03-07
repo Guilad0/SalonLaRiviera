@@ -26,7 +26,7 @@
             'px-4 py-2 rounded-full transition-all duration-300',
             selectedCategory === category
               ? 'bg-amber-500 text-white shadow-lg'
-              : 'bg-white text-gray-700 hover:bg-blue-50',
+              : 'bg-stone-900 text-gray-100 hover:bg-amber-500',
           ]"
           style="font-family: 'Comfortaa', sans-serif"
         >
