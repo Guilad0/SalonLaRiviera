@@ -3,7 +3,6 @@
     <h2 class="text-3xl font-serif font-bold text-stone-800 mb-8 text-center">
       Conferencias - Eventos Corporativos
     </h2>
-
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <EventCard v-for="(event, index) in events" :key="index" :event="event" />
     </div>
@@ -20,8 +19,7 @@ const events = ref([
     price: "Obten mas informacion",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082085/IMG-20180913-WA0015_lvwmon.jpg",
-    description:
-      "Querida quinceañera y familia, Es un honor para nosotros ser parte de este momento tan especial en sus vidas.",
+
     detailsLink: "/paquetes",
   },
   {
@@ -29,8 +27,6 @@ const events = ref([
     price: "Obten mas información",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082087/IMG-20180829-WA0009_jq2hku.jpg",
-    description:
-      "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial en sus vidas.",
     detailsLink: "/paquetes",
   },
   {
@@ -39,8 +35,6 @@ const events = ref([
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082087/IMG_20210403_121803_317_zlmnxc.jpg",
 
-    description:
-      "Estimados anfitriones y familia, Es un honor para nosotros ser parte de este momento tan especial en sus vidas.",
     detailsLink: "/paquetes",
   },
   {
@@ -48,9 +42,6 @@ const events = ref([
     price: "Obten mas información",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082086/IMG_20180730_165127_330_vbnr4t.jpg",
-
-    description:
-      "Estimados anfitriones y familia, Es un honor para nosotros ser parte de este momento tan especial en sus vidas.",
     detailsLink: "/paquetes",
   },
 ]);

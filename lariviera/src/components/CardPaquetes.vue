@@ -13,7 +13,7 @@ import EventCard from "../components/EventCard.vue";
 const events = ref([
   {
     title: "15 años",
-    price: "190 Bs por persona",
+    price: "Obten mas información",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082148/SaveClip.App_81411677_2451636041752098_240112728907964506_n_djjjcy.jpg",
     description:
@@ -22,7 +22,7 @@ const events = ref([
   },
   {
     title: "Matrimonios",
-    price: "185 Bs por persona",
+    price: "Obten mas información",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/IMG-20180926-WA0019_oiwq7y.jpg",
     description:

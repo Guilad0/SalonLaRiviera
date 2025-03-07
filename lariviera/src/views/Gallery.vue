@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')] bg-cover"
+    class="min-h-screen bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')]"
   >
     <header class="shadow-md py-6 bg-stone-900">
       <div class="container mx-auto px-4 mt-5 sm:mt-4">

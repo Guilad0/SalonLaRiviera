@@ -20,8 +20,6 @@ const events = ref([
     price: "22/08/2023",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082118/IMG-20180827-WA0010_psttr5.jpg",
-    description:
-      "Querida quinceañera y familia, Es un honor para nosotros ser parte de este momento tan especial en sus vidas.",
     detailsLink: "/paquetes",
   },
   {
@@ -29,8 +27,6 @@ const events = ref([
     price: "12/08/2023",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082119/IMG-20180827-WA0020_aapitq.jpg",
-    description:
-      "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial en sus vidas.",
     detailsLink: "/paquetes",
   },
   {
@@ -38,8 +34,6 @@ const events = ref([
     price: "29/07/2024",
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082125/IMG_20210417_212241_orqgbl.jpg",
-    description:
-      "Estimados anfitriones y familia, Es un honor para nosotros ser parte de este momento tan especial en sus vidas.",
     detailsLink: "/paquetes",
   },
 ]);

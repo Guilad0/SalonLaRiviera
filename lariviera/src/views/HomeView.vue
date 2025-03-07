@@ -98,7 +98,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
       </section>
       <section
         id="paquetes"
-        class="py-20 px-6 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')] bg-cover"
+        class="py-20 px-6 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')]"
       >
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
@@ -111,7 +111,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         </div>
       </section>
 
-      <section class="py-20 px-6 bg-stone-800">
+      <section class="py-20 px-6 bg-stone-800" id="conferencias">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Conferencias</h2>
@@ -122,7 +122,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
       </section>
       <section
         id="eventos"
-        class="py-20 px-6 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')] bg-cover"
+        class="py-20 px-6 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')]"
       >
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">

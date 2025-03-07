@@ -44,15 +44,21 @@ const toggleMenu = () => {
           class="relative hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full text-decoration-none text-white"
           >Inicio</a
         >
+
+        <a
+          href="#galeria"
+          class="relative hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full text-decoration-none text-white"
+          >Galería</a
+        >
         <a
           href="#paquetes"
           class="relative hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full text-decoration-none text-white"
           >Paquetes</a
         >
         <a
-          href="#galeria"
+          href="#conferencias"
           class="relative hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full text-decoration-none text-white"
-          >Galería</a
+          >Conferencias</a
         >
         <a
           href="#eventos"
@@ -100,10 +106,10 @@ const toggleMenu = () => {
       class="fixed top-16 left-0 right-0 bg-black/70 backdrop-blur-md z-40 py-4 md:hidden flex flex-col items-center"
     >
       <a
-        href="#paquetes"
+        href="/"
         @click="isMenuOpen = false"
         class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
-        >Paquetes</a
+        >Inicio</a
       >
       <a
         href="#galeria"
@@ -111,6 +117,19 @@ const toggleMenu = () => {
         class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
         >Galería</a
       >
+      <a
+        href="#paquetes"
+        @click="isMenuOpen = false"
+        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
+        >Paquetes</a
+      >
+      <a
+        href="#conferencias"
+        @click="isMenuOpen = false"
+        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
+        >Conferencias</a
+      >
+
       <a
         href="#eventos"
         @click="isMenuOpen = false"
