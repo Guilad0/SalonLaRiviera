@@ -27,8 +27,6 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         alt="logo"
         class="h-48 w-48 sm:h-60 sm:w-60 hidden rounded-full absolute left-60 bottom-20 opacity-80 animate-fadeInDrop"
       />
-
-      <!-- Mover el título H1 arriba y el contenido pegado a él -->
       <div
         class="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center z-10 w-full"
       >
