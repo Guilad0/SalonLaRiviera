@@ -1,26 +1,34 @@
 <template>
-  <div class="overflow-x-auto w-full font-sans bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover">
-    <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
-      <h1 class="text-1xl font-[Mode G] text-center">Detalles del Paquete Platinum: {{ paqueteId }}</h1>
+  <div
+    class="overflow-x-auto w-full font-sans bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover"
+  >
+    <div
+      class="m-5 p-2.5 font-serif text-2xl"
+      style="font-family: 'Comfortaa', sans-serif"
+    >
+      <h1 class="text-1xl font-[Mode G] text-center">
+        Detalles del Paquete Platinum: {{ paqueteId }}
+      </h1>
 
-      <h2 class="text-justify  carta px-4">
-        "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial
-        en sus vidas. En nombre del <b>Salón de Eventos La Riviera</b>, nos especializamos
-        en hacer de cada boda un evento único e inolvidable, cuidando cada detalle para que
-        disfruten de una celebración mágica y sin preocupaciones. A continuación, les
-        presentamos nuestra propuesta de cotización, diseñada para adaptarse a sus
-        necesidades y hacer realidad la boda de sus sueños. Quedamos atentos a cualquier
-        consulta o ajuste que deseen realizar. Será un honor acompañarlos en este gran día."
+      <h2 class="text-justify carta px-4">
+        "Estimados novios, Es un placer para nosotros ser parte de este momento tan
+        especial en sus vidas. En nombre del <b>Salón de Eventos La Riviera</b>, nos
+        especializamos en hacer de cada boda un evento único e inolvidable, cuidando cada
+        detalle para que disfruten de una celebración mágica y sin preocupaciones. A
+        continuación, les presentamos nuestra propuesta de cotización, diseñada para
+        adaptarse a sus necesidades y hacer realidad la boda de sus sueños. Quedamos
+        atentos a cualquier consulta o ajuste que deseen realizar. Será un honor
+        acompañarlos en este gran día."
       </h2>
 
       <h3 class="underline text-center carta1 px-4">
-        A continuación, detallamos los servicios y opciones incluidas en nuestra cotización,
-        diseñados para cubrir todas las necesidades de su boda y asegurar que sea un evento
-        memorable.
+        A continuación, detallamos los servicios y opciones incluidas en nuestra
+        cotización, diseñados para cubrir todas las necesidades de su boda y asegurar que
+        sea un evento memorable.
       </h3>
 
-      <div class="overflow-x-auto ">
-        <table class="table-auto w-full border-collapse mt-4 ">
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full border-collapse mt-4">
           <tbody>
             <tr>
               <td class="border px-4 py-2 text-left align-top">
@@ -36,32 +44,35 @@
               <td class="border px-4 py-2 text-left align-top">
                 <p class="text-justify italic font-bold">Buffet</p>
                 <p class="text-justify italic">• Cena tres tipos de carne a elección</p>
-                <p class="text-justify italic">• Tres guarniciones  a eleccion</p>
+                <p class="text-justify italic">• Tres guarniciones a eleccion</p>
                 <p class="text-justify italic">• Ensaladas variedad</p>
               </td>
             </tr>
             <!-- Fila 2 -->
             <tr>
               <td class="border px-4 py-2 text-left align-top">
-                <p class="text-justify italic font-bold">Bebidas en mesa con alcohol (2)</p>
+                <p class="text-justify italic font-bold">
+                  Bebidas en mesa con alcohol (2)
+                </p>
                 <p class="text-justify italic">• Whisky de litro. J.W/Old etq.</p>
-                <p class="text-justify italic">• Ron Carta Vieja </p>
+                <p class="text-justify italic">• Ron Carta Vieja</p>
                 <p class="text-justify italic">• Ron Solera</p>
                 <p class="text-justify italic">• Vino</p>
-
               </td>
               <td class="border px-4 py-2 text-left align-top">
-                <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)</p>
+                <p class="text-justify italic font-bold">
+                  Bebidas sin alcohol (canilla libre)
+                </p>
                 <p class="text-justify italic">• Gaseosas /hielo/limón/agua</p>
               </td>
               <td class="border px-4 py-2 text-left align-top">
                 <p class="text-justify italic font-bold">Fondeu de chocolate</p>
                 <p class="text-justify italic">• Frutas de temporada</p>
-                <p class="text-justify italic">• Mashmelos</p>                
+                <p class="text-justify italic">• Mashmelos</p>
               </td>
             </tr>
-             <!-- Fila 3 -->
-             <tr>
+            <!-- Fila 3 -->
+            <tr>
               <td class="border px-4 py-2 text-left align-top">
                 <p class="text-justify italic font-bold">Montaje</p>
                 <p class="text-justify italic">• Mesas, sillas tifany</p>
@@ -78,21 +89,29 @@
                 <p class="text-justify italic">• Coordinador de Eventos</p>
                 <p class="text-justify italic">• Garzones</p>
                 <p class="text-justify italic">• Personal de seguridad</p>
-                <p class="text-justify italic">• Personal de limpieza durante todo el evento</p>
+                <p class="text-justify italic">
+                  • Personal de limpieza durante todo el evento
+                </p>
               </td>
             </tr>
-             <!-- Fila sola -->
-             <tr>
+            <!-- Fila sola -->
+            <tr>
               <td colspan="3" class="border px-4 py-2 text-left align-top">
-                <p class="text-justify italic font-bold">Detalles del plato servido</p>              
-              
+                <p class="text-justify italic font-bold">Detalles del plato servido</p>
+
                 <p class="text-justify italic font-bold">Saladitos</p>
                 <p class="text-justify italic">Carnes:</p>
-                <p class="text-justify italic">• Peceto relleno/medallón de pollo /filete de cerdo al vino</p>           
+                <p class="text-justify italic">
+                  • Peceto relleno/medallón de pollo /filete de cerdo al vino
+                </p>
                 <p class="text-justify italic font-bold">Guarniciones:</p>
-                <p class="text-justify italic">• Papa salteada al vino/croqueta de yuca/pastel de papa/arroz chifa</p>
+                <p class="text-justify italic">
+                  • Papa salteada al vino/croqueta de yuca/pastel de papa/arroz chifa
+                </p>
                 <p class="text-justify italic">Ensaladas</p>
-                <p class="text-justify italic">• Salsa waldorf/salsa alemana con millo/salsa griega/ verduras al vapor</p>
+                <p class="text-justify italic">
+                  • Salsa waldorf/salsa alemana con millo/salsa griega/ verduras al vapor
+                </p>
               </td>
             </tr>
           </tbody>
@@ -101,10 +120,10 @@
 
       <br /><br />
       <h3 class="text-justify italic font-bold text-center px-4">
-        Calcula el Costo Total según el Número de Invitados, previo reunión con el coordinador
+        Calcula el Costo Total según el Número de Invitados, previo reunión con el
+        coordinador
       </h3>
       <br />
-
 
       <div class="w-full max-w-2xl mx-auto px-4">
         <!-- Tabla Responsiva -->
@@ -112,16 +131,25 @@
           <table class="w-full border-collapse mt-4">
             <thead>
               <tr class="bg-gray-100">
-                <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Detalle</th>
-                <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">Valor</th>
+                <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">
+                  Detalle
+                </th>
+                <th class="px-4 py-2 text-left text-sm font-medium text-gray-700">
+                  Valor
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr class="border-b">
                 <td class="px-4 py-2 text-sm text-white">Cantidad de personas</td>
                 <td class="px-4 py-2 text-sm text-black font-bold text-600 recuadro">
-                  <input type="number" v-model="cantidad" min="0"
-                    class="w-full border rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  <input
+                    type="number"
+                    v-model="cantidad"
+                    min="0"
+                    placeholder="Ingrese la cantidad de personas estimada"
+                    class="w-full border rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"
+                  />
                 </td>
               </tr>
               <tr class="border-b">
@@ -130,19 +158,16 @@
               </tr>
               <tr>
                 <td class="px-4 py-2 text-base text-white">Total</td>
-                <td class="px-4 py-2 text-base font-semibold text-white">{{ total }} Bs</td>
+                <td class="px-4 py-2 text-base font-semibold text-white">
+                  {{ total }} Bs
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-
-
-
-
     </div>
   </div>
-
 </template>
 
 <script>
@@ -166,7 +191,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Great+Vibes&display=swap");
 
 .font-sans {
   font-family: sans-serif;
@@ -187,7 +212,7 @@ td {
 
 th {
   background-color: #1b1e24;
-  color: #D5DDE5;
+  color: #d5dde5;
   font-size: 20px;
   font-weight: 500;
 }
@@ -195,11 +220,12 @@ th {
 tr:nth-child(even):hover td {
   background: rgb(78, 80, 102);
   /* Gris oscuro */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 tr:nth-child(odd):hover td {
   background: rgb(251, 191, 36);
+
   /* Amber-400 */
   color: #000000;
   /* Para que el texto sea visible en amarillo */
@@ -208,13 +234,10 @@ tr:nth-child(odd):hover td {
 .cantidad-personas {
   width: 100%;
   text-align: center;
-  border: 2px solid red;
   padding: 5px;
 }
 
-
 @media (max-width: 480px) {
-
   .responsive-th,
   .responsive-td {
     font-size: 10px;
@@ -228,7 +251,6 @@ tr:nth-child(odd):hover td {
     padding: 2px;
   }
 }
-
 
 h1,
 h2,
@@ -290,11 +312,5 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
   }
-}
-
-.recuadro {
-
-  color: red;
-  border: red 2px solid;
 }
 </style>
