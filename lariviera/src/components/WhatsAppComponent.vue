@@ -1,7 +1,7 @@
 <template>
   <div class="whatsapp">
     <a
-      href="https://wa.me/59169004189?text=%F0%9F%98%81%22%21Hola%21%20Estoy%20interesado%20en%20su%20sal%C3%B3n%20para%20un%20evento.%20%F0%9F%8D%BE%F0%9F%8C%82%20%3FPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20disponibilidad%20%20%F0%9F%93%88%2C%20paquetes%20y%20precios%20%3F%20%21Muchas%20gracias%21%20%21Espero%20su%20respuesta%20pronto%21%20%F0%9F%8E%89%F0%9F%A5%B3%F0%9F%8E%89"
+      href="https://wa.me/59160765655?text=%F0%9F%98%81%22%21Hola%21%20Estoy%20interesado%20en%20su%20sal%C3%B3n%20para%20un%20evento.%20%F0%9F%8D%BE%F0%9F%8C%82%20%3FPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20disponibilidad%20%20%F0%9F%93%88%2C%20paquetes%20y%20precios%20%3F%20%21Muchas%20gracias%21%20%21Espero%20su%20respuesta%20pronto%21%20%F0%9F%8E%89%F0%9F%A5%B3%F0%9F%8E%89"
       target="_blank"
       rel="noopener"
     >

@@ -48,9 +48,8 @@ export default {
     return {
       currentIndex: 0,
       images: [
-        "https://res.cloudinary.com/dughcx6qb/image/upload/v1738463584/WhatsApp_Image_2024-01-14_at_9.12.58_AM_1_e1blwb.jpg",
-        "https://res.cloudinary.com/dughcx6qb/image/upload/v1738349304/15Estandar_tnis7m.jpg",
         "https://res.cloudinary.com/dughcx6qb/image/upload/v1738349297/EPPlatinum_rajo51.jpg",
+        "https://res.cloudinary.com/dughcx6qb/image/upload/v1741362697/img1riviera_acojjc.jpg",
       ],
       interval: null,
     };

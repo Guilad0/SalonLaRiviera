@@ -28,33 +28,13 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         class="h-48 w-48 sm:h-60 sm:w-60 hidden rounded-full absolute left-60 bottom-20 opacity-80 animate-fadeInDrop"
       />
       <div
-        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center z-10 w-full"
+        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center z-10 w-full flex justify-center"
       >
-        <h1
-          class="text-4xl md:text-6xl lg:text-7xl text-white font-bold tle animate-fadeInDrop"
-        >
-          SALÓN DE EVENTOS <span class="text-amber-400">LA RIVIERA</span>
-        </h1>
-        <div class="relative z-10 text-center max-w-4xl mx-auto px-6 mt-4">
-          <p class="text-white/80 text-xl mb-6 max-w-2xl mx-auto animate-fadeInDrop">
-            El lugar perfecto para celebrar tus momentos más importantes con elegancia y
-            distinción
-          </p>
-          <div class="flex flex-wrap justify-center gap-4 animate-fadeInDrop">
-            <a
-              href="#paquetes"
-              class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-black font-medium rounded-lg transition-colors text-decoration-none"
-            >
-              Ver Paquetes
-            </a>
-            <a
-              href="#contacto"
-              class="px-8 py-3 bg-transparent hover:bg-white/10 text-white border border-white/30 font-medium rounded-lg transition-colors text-decoration-none"
-            >
-              Contáctanos
-            </a>
-          </div>
-        </div>
+        <img
+          src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
+          alt=""
+          class="h-40 sm:h-40 rounded-full shadow-lg opacity-70"
+        />
       </div>
 
       <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -199,10 +179,10 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
                     />
                   </svg>
                   <a
-                    href="https://wa.me/59169004189?text=%F0%9F%98%81%22%21Hola%21%20Estoy%20interesado%20en%20su%20sal%C3%B3n%20para%20un%20evento.%20%F0%9F%8D%BE%F0%9F%8C%82%20%3FPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20disponibilidad%20%20%F0%9F%93%88%2C%20paquetes%20y%20precios%20%3F%20%21Muchas%20gracias%21%20%21Espero%20su%20respuesta%20pronto%21%20%F0%9F%8E%89%F0%9F%A5%B3%F0%9F%8E%89"
+                    href="https://wa.me/59160765655?text=%F0%9F%98%81%22%21Hola%21%20Estoy%20interesado%20en%20su%20sal%C3%B3n%20para%20un%20evento.%20%F0%9F%8D%BE%F0%9F%8C%82%20%3FPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20disponibilidad%20%20%F0%9F%93%88%2C%20paquetes%20y%20precios%20%3F%20%21Muchas%20gracias%21%20%21Espero%20su%20respuesta%20pronto%21%20%F0%9F%8E%89%F0%9F%A5%B3%F0%9F%8E%89"
                     target="_blank"
                     class="hover:text-amber-500 transition-colors text-white text-decoration-none"
-                    >+591 69004189</a
+                    >+591 60765655</a
                   >
                 </div>
 

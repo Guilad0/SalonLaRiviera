@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="p-6 bg-white border-x border-b border-stone-200 rounded-b-lg">
+    <div class="p-6 bg-white border-x border-b border-stone-900 rounded-b-lg">
       <div class="flex justify-between items-center mb-4">
         <span
           class="px-4 py-2 bg-stone-100 text-stone-800 font-serif rounded-full font-medium"
@@ -20,7 +20,7 @@
           {{ event.price }}
         </span>
         <div
-          class="h-8 w-8 flex items-center justify-center bg-stone-900 text-gray-100 rounded-full hover:bg-amber-500"
+          class="h-8 w-8 flex items-center justify-center bg-stone-900 text-gray-100 rounded-full hover:bg-amber-500 animate-pulse"
         >
           <router-link
             to="/paquetes"
