@@ -1,7 +1,9 @@
 <template>
-  <div class="min-h-screen bg-gray-100">
+  <div
+    class="min-h-screen bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')] bg-cover"
+  >
     <header class="shadow-md py-6 bg-stone-900">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 mt-5 sm:mt-4">
         <h1 class="text-3xl md:text-4xl font-[Comfortaa] text-white text-center">
           Galería de Eventos
         </h1>

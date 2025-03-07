@@ -50,7 +50,7 @@ const toggleMenu = () => {
           >Paquetes</a
         >
         <a
-          href="/galeria"
+          href="#galeria"
           class="relative hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full text-decoration-none text-white"
           >Galería</a
         >
@@ -102,25 +102,25 @@ const toggleMenu = () => {
       <a
         href="#paquetes"
         @click="isMenuOpen = false"
-        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors"
+        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
         >Paquetes</a
       >
       <a
         href="#galeria"
         @click="isMenuOpen = false"
-        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors"
+        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
         >Galería</a
       >
       <a
         href="#eventos"
         @click="isMenuOpen = false"
-        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors"
+        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
         >Eventos</a
       >
       <a
         href="#contacto"
         @click="isMenuOpen = false"
-        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors"
+        class="py-3 px-4 w-full text-center text-white hover:bg-amber-500/20 transition-colors text-decoration-none"
         >Contacto</a
       >
     </div>

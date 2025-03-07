@@ -21,38 +21,45 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         />
         <div class="absolute inset-0 bg-black/50"></div>
       </div>
+
       <img
         src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
         alt="logo"
         class="h-48 w-48 sm:h-60 sm:w-60 hidden rounded-full absolute left-60 bottom-20 opacity-80 animate-fadeInDrop"
       />
-      <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+
+      <!-- Mover el título H1 arriba y el contenido pegado a él -->
+      <div
+        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-center z-10 w-full"
+      >
         <h1
-          class="text-4xl md:text-6xl lg:text-7xl text-white font-bold tle mb-6 animate-fadeInDrop"
+          class="text-4xl md:text-6xl lg:text-7xl text-white font-bold tle animate-fadeInDrop"
         >
           SALÓN DE EVENTOS <span class="text-amber-400">LA RIVIERA</span>
         </h1>
-        <p class="text-white/80 text-xl mb-8 max-w-2xl mx-auto animate-fadeInDrop">
-          El lugar perfecto para celebrar tus momentos más importantes con elegancia y
-          distinción
-        </p>
-        <div class="flex flex-wrap justify-center gap-4 animate-fadeInDrop">
-          <a
-            href="#paquetes"
-            class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-black font-medium rounded-lg transition-colors text-decoration-none"
-          >
-            Ver Paquetes
-          </a>
-          <a
-            href="#contacto"
-            class="px-8 py-3 bg-transparent hover:bg-white/10 text-white border border-white/30 font-medium rounded-lg transition-colors text-decoration-none"
-          >
-            Contáctanos
-          </a>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-6 mt-4">
+          <p class="text-white/80 text-xl mb-6 max-w-2xl mx-auto animate-fadeInDrop">
+            El lugar perfecto para celebrar tus momentos más importantes con elegancia y
+            distinción
+          </p>
+          <div class="flex flex-wrap justify-center gap-4 animate-fadeInDrop">
+            <a
+              href="#paquetes"
+              class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-black font-medium rounded-lg transition-colors text-decoration-none"
+            >
+              Ver Paquetes
+            </a>
+            <a
+              href="#contacto"
+              class="px-8 py-3 bg-transparent hover:bg-white/10 text-white border border-white/30 font-medium rounded-lg transition-colors text-decoration-none"
+            >
+              Contáctanos
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -71,9 +78,27 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
     </section>
 
     <main class="bg-gradient-to-b from-stone-100 to-stone-200">
+      <section id="galeria" class="py-20 px-6 bg-stone-900">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+              Galería de Eventos
+            </h2>
+            <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+          </div>
+          <button
+            class="px-3 py-2 bg-amber-500 hover:bg-amber-600 text-black font-medium rounded-lg transition-colors m-4"
+          >
+            <router-link to="/galeria" class="text-decoration-none text-black">
+              Revisar Galeria
+            </router-link>
+          </button>
+          <Carrusel class="w-full rounded-xl overflow-hidden shadow-2xl" />
+        </div>
+      </section>
       <section
         id="paquetes"
-        class="py-20 px-6 bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover"
+        class="py-20 px-6 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')] bg-cover"
       >
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
@@ -85,20 +110,19 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
           <CardPaquetes />
         </div>
       </section>
-      <section id="galeria" class="py-20 px-6 bg-stone-900">
+
+      <section class="py-20 px-6 bg-stone-800">
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-              Galería de Eventos
-            </h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Conferencias</h2>
             <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
           </div>
-          <Carrusel class="w-full rounded-xl overflow-hidden shadow-2xl" />
+          <CardConferencias />
         </div>
       </section>
       <section
         id="eventos"
-        class="py-20 px-6 bg-[url('https://media.istockphoto.com/id/938870836/photo/gold-glittering-star-light-and-bokeh-magic-dust-abstract-background-element-for-your-product.jpg?s=2048x2048&w=is&k=20&c=V9Z6q3MNwW-KQxoZi4TW6gqMKW0uQgQZHGTKwoGzVjU=')] bg-cover"
+        class="py-20 px-6 bg-[url('https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg')] bg-cover"
       >
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-12">
@@ -108,15 +132,6 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
             <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
           </div>
           <CardEventos />
-        </div>
-      </section>
-      <section class="py-20 px-6 bg-stone-800">
-        <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Conferencias</h2>
-            <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
-          </div>
-          <CardConferencias />
         </div>
       </section>
       <div>
@@ -163,8 +178,10 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
                   </svg>
                   <a
                     href="https://www.google.com/maps/place/Salon+De+Eventos+La+Riviera/@-17.3667954,-66.1665446,18.65z/data=!4m6!3m5!1s0x93e37440844bb993:0x8d292c6a03d3a3b6!8m2!3d-17.3665926!4d-66.1658639!16s%2Fg%2F11b77v9jth?entry=ttu&g_ep=EgoyMDI1MDMwMy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
-                    class="hover:text-amber-500 transition-colors text-white text-decoration-none q"
-                    >Av. Simon Lopez #123, Cochabamba, Cercado</a
+                    class="hover:text-amber-500 transition-colors text-white text-decoration-none"
+                    target="_blank"
+                    >Av. Simon Lopez, Cochabamba, Cercado <br />Frente a Tribunal
+                    Electoral Departamental Cochabamba</a
                   >
                 </div>
 
@@ -184,7 +201,8 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
                     />
                   </svg>
                   <a
-                    href="https://wa.link/qdadpj"
+                    href="https://wa.me/59169004189?text=%F0%9F%98%81%22%21Hola%21%20Estoy%20interesado%20en%20su%20sal%C3%B3n%20para%20un%20evento.%20%F0%9F%8D%BE%F0%9F%8C%82%20%3FPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20disponibilidad%20%20%F0%9F%93%88%2C%20paquetes%20y%20precios%20%3F%20%21Muchas%20gracias%21%20%21Espero%20su%20respuesta%20pronto%21%20%F0%9F%8E%89%F0%9F%A5%B3%F0%9F%8E%89"
+                    target="_blank"
                     class="hover:text-amber-500 transition-colors text-white text-decoration-none"
                     >+591 69004189</a
                   >
@@ -205,7 +223,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
                       d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                     />
                   </svg>
-                  <span>gmail.@lariviera.com</span>
+                  <span>salon.de.eventos.la.riviera@gmail.com</span>
                 </div>
               </div>
             </div>

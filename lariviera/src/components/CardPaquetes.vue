@@ -26,7 +26,7 @@ const events = ref([
     image:
       "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/IMG-20180926-WA0019_oiwq7y.jpg",
     description:
-      "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial en sus vidas.",
+      "Estimados novios, Es un placer para nosotros ser parte de este momento tan especial en sus vidas y hacer de su día especial aún mas especial.",
     detailsLink: "/paquetes",
   },
   {

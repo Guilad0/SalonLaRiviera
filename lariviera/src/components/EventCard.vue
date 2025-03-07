@@ -20,9 +20,12 @@
           {{ event.price }}
         </span>
         <div
-          class="h-8 w-8 flex items-center justify-center bg-stone-900 text-white rounded-full hover:bg-amber-500"
+          class="h-8 w-8 flex items-center justify-center bg-stone-900 text-gray-100 rounded-full hover:bg-amber-500"
         >
-          <router-link to="/paquetes">
+          <router-link
+            to="/paquetes"
+            class="text-decoration-none text-gray-100 hover:text-stone-900"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-4 w-4"
@@ -53,9 +56,9 @@
 
       <router-link
         :to="event.detailsLink"
-        class="inline-block py-2 px-4 bg-stone-800 text-white font-medium rounded transition hover:bg-amber-500 text-decoration-none"
+        class="inline-block py-2 px-4 bg-stone-800 text-gray-100 font-medium rounded transition-colors hover:bg-amber-500 text-decoration-none hover:text-stone-900"
       >
-        Ver a Detalle
+        Ver Detalles
       </router-link>
     </div>
   </div>
