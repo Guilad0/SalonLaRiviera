@@ -14,13 +14,19 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
     <Navbar />
     <section class="relative w-full h-screen flex items-center justify-center">
       <div class="absolute inset-0 w-full h-full overflow-hidden">
-        <video ref="videoPlayer" class="w-full h-full object-cover" autoplay muted loop>
+        <video
+          ref="videoPlayer"
+          class="w-full h-full object-cover"
+          autoplay
+          loop
+          controls
+        >
           <source
             src="https://res.cloudinary.com/dughcx6qb/video/upload/v1741611241/rivieravideo_w7e5hc.mp4"
             type="video/mp4"
           />
         </video>
-        <div class="absolute inset-0 bg-black/50"></div>
+        <!-- <div class="absolute inset-0 bg-black/50"></div> -->
       </div>
 
       <!-- //fondoimagen -->
