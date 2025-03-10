@@ -14,6 +14,17 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
     <Navbar />
     <section class="relative w-full h-screen flex items-center justify-center">
       <div class="absolute inset-0 w-full h-full overflow-hidden">
+        <video ref="videoPlayer" class="w-full h-full object-cover" autoplay muted loop>
+          <source
+            src="https://res.cloudinary.com/dughcx6qb/video/upload/v1741611241/rivieravideo_w7e5hc.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+
+      <!-- //fondoimagen -->
+      <!-- <div class="absolute inset-0 w-full h-full overflow-hidden">
         <img
           src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738349297/EPPlatinum_rajo51.jpg"
           alt="home"
@@ -21,6 +32,7 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         />
         <div class="absolute inset-0 bg-black/50"></div>
       </div>
+ -->
 
       <img
         src="https://res.cloudinary.com/dughcx6qb/image/upload/v1738605755/IMG-20180802-WA0002_nxqo8w.jpg"
