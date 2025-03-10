@@ -37,7 +37,7 @@
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Plato Sevido</p>
                 <p class="text-justify italic">• Cena un tipo de carne a elección</p>
-                <p class="text-justify italic">• Dos guarniciones  a eleccion</p>
+                <p class="text-justify italic">• Dos guarniciones a eleccion</p>
                 <p class="text-justify italic">• Una ensalada</p>
               </td>
             </tr>
@@ -46,7 +46,7 @@
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Incluye</p>
                 <p class="text-justify italic">• Amplificación</p>
-                <p class="text-justify italic">• Luces LED </p>               
+                <p class="text-justify italic">• Luces LED </p>
 
               </td>
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
@@ -57,15 +57,15 @@
               </td>
               <td class="border px-4 py-2 text-left align-top min-w-[200px]  personal-atencion">
                 <p class="text-justify italic font-bold">Bebidas en mesa con alcohol (1 TRAGO)</p>
-                <p class="text-justify italic">• 1 Ron carta vieja  </p> 
-                <p class="text-justify italic">• 1 Singani Casa real negro</p>                
+                <p class="text-justify italic">• 1 Ron carta vieja </p>
+                <p class="text-justify italic">• 1 Singani Casa real negro</p>
               </td>
             </tr>
             <!-- Fila 3 -->
             <tr>
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Bebidas sin alcohol (canilla libre)</p>
-                <p class="text-justify italic">• Gaseosas / agua/jugos</p>                
+                <p class="text-justify italic">• Gaseosas / agua/jugos</p>
               </td>
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Montaje</p>
@@ -76,7 +76,7 @@
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Personal de atención</p>
                 <p class="text-justify italic">• Coordinador de Eventos</p>
-                <p class="text-justify italic">• Garzones</p>               
+                <p class="text-justify italic">• Garzones</p>
               </td>
             </tr>
             <!-- Fila sola -->
@@ -99,6 +99,10 @@
       </div>
 
       <br /><br />
+      <h3 class="text-justify italic font-bold text-center px-4">
+        *Todos los ítems del paquete pueden modificarse coordinando con el administrador del salón.
+      </h3>
+      <br>
       <h3 class="text-justify italic font-bold text-center px-4">
         Calcula el Costo Total según el Número de Invitados, previo reunión con el coordinador
       </h3>
@@ -236,17 +240,82 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
-}
-
-.carta1 {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 1rem 0;
 }
 
 .carta {
-  /* font-family: 'Great Vibes', cursive; */
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  /* Tamaño adaptable */
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carta1 {
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  /* Tamaño adaptable */
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Secciones adicionales y extras */
+h3 ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+h3 li {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  /* Tamaño adaptable */
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .m-5 {
+    margin: 1rem;
+    /* Reducir márgenes en pantallas más pequeñas */
+  }
+
+  .p-25 {
+    padding: 1rem;
+    /* Ajustar padding */
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    /* Reducir padding horizontal */
+    padding-right: 1rem;
+  }
+
+  h1 {
+    padding: 0.5rem 0;
+  }
+
+  .carta {
+    text-align: left;
+    /* Mejor legibilidad en pantallas pequeñas */
+  }
+
+  .carta1 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  h3 li {
+    padding-left: 0.5rem;
+    /* Ajustar espaciado en listas */
+  }
+
+  .text-2xl {
+    font-size: 1.25rem;
+    /* Reducir tamaño base en móviles pequeños */
+  }
 }
 
 @media (max-width: 768px) {
@@ -266,9 +335,7 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .carta {
-    font-size: 1.2rem;
-  }
+
 
   /* Mantener el diseño original para la mayoría de las celdas */
   .table-auto tbody tr {
@@ -283,16 +350,20 @@ h1 {
 
   /* Ajuste específico para "Personal de atención" */
   .personal-atencion {
-    white-space: normal; /* Permitir que el texto se envuelva */
-    min-width: 0; /* Evitar que fuerce un ancho excesivo */
-    max-width: 100%; /* Limitar al ancho del contenedor */
+    white-space: normal;
+    /* Permitir que el texto se envuelva */
+    min-width: 0;
+    /* Evitar que fuerce un ancho excesivo */
+    max-width: 100%;
+    /* Limitar al ancho del contenedor */
   }
 
   /* Ajuste específico para "Detalles del plato servido" */
   .detalles-plato {
     display: block;
     width: 100%;
-    white-space: normal; /* Permitir que el texto se envuelva */
+    white-space: normal;
+    /* Permitir que el texto se envuelva */
     min-width: 0;
     max-width: 100%;
   }

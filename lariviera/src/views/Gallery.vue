@@ -77,7 +77,7 @@ export default {
       selectedCategory: "Todos",
       searchQuery: "",
       selectedPhoto: null,
-      categories: ["Todos", "Bodas", "Quinceañeras", "Eventos", "Gstronomia"],
+      categories: ["Todos", "Bodas", "Quinceañeras", "Eventos", "Gastronomia"],
       photos: [
         {
           id: 1,
