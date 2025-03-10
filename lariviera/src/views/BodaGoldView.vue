@@ -1,5 +1,6 @@
 <template>
-  <div class="overflow-x-auto w-full font-sans bg-[url(https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg)] bg-cover">
+  <div
+    class="overflow-x-auto w-full font-sans bg-[url(https://res.cloudinary.com/dughcx6qb/image/upload/v1741331030/bglariviera_x530xy.jpg)] bg-cover">
     <div class="m-5 p-2.5 font-serif text-2xl" style="font-family: 'Comfortaa', sans-serif;">
       <h1 class="text-1xl font-[Mode G] text-center">Detalles del Paquete Gold: {{ paqueteId }}</h1>
 
@@ -34,7 +35,7 @@
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Plato Servido</p>
                 <p class="text-justify italic">• Cena dos tipos de carne a elección</p>
-                <p class="text-justify italic">• Dos guarniciones  a eleccion</p>
+                <p class="text-justify italic">• Dos guarniciones a eleccion</p>
                 <p class="text-justify italic">• Dos ensaladas</p>
               </td>
             </tr>
@@ -55,11 +56,11 @@
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Fondeu de chocolate</p>
                 <p class="text-justify italic">• Frutas de temporada</p>
-                <p class="text-justify italic">• Mashmelos</p>                
+                <p class="text-justify italic">• Mashmelos</p>
               </td>
             </tr>
-             <!-- Fila 3 -->
-             <tr>
+            <!-- Fila 3 -->
+            <tr>
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
                 <p class="text-justify italic font-bold">Montaje</p>
                 <p class="text-justify italic">• Mesas, sillas tifany</p>
@@ -79,18 +80,19 @@
                 <p class="text-justify italic">• Personal de limpieza durante todo el evento</p>
               </td>
             </tr>
-             <!-- Fila sola -->
-             <tr>
+            <!-- Fila sola -->
+            <tr>
               <td colspan="3" class="border px-4 py-2 text-left align-top detalles-plato">
-                <p class="text-justify italic font-bold">Detalles del plato servido</p>              
-              
+                <p class="text-justify italic font-bold">Detalles del plato servido</p>
+
                 <p class="text-justify italic font-bold">Saladitos</p>
                 <p class="text-justify italic">Carnes:</p>
-                <p class="text-justify italic">• Peceto relleno/medallón de pollo /filete de cerdo al vino</p>           
+                <p class="text-justify italic">• Peceto relleno/medallón de pollo /filete de cerdo al vino</p>
                 <p class="text-justify italic font-bold">Guarniciones:</p>
                 <p class="text-justify italic">• Papa salteada al vino/croqueta de yuca/pastel de papa/arroz chifa</p>
                 <p class="text-justify italic">Ensaladas</p>
-                <p class="text-justify italic">• Salsa waldorf/salsa alemana con millo/salsa griega/ verduras al vapor</p>
+                <p class="text-justify italic">• Salsa waldorf/salsa alemana con millo/salsa griega/ verduras al vapor
+                </p>
               </td>
             </tr>
           </tbody>
@@ -98,6 +100,10 @@
       </div>
 
       <br /><br />
+      <h3 class="text-justify italic font-bold text-center px-4">
+        *Todos los ítems del paquete pueden modificarse coordinando con el administrador del salón.
+      </h3>
+      <br>
       <h3 class="text-justify italic font-bold text-center px-4">
         Calcula el Costo Total según el Número de Invitados, previo reunión con el coordinador
       </h3>
@@ -239,16 +245,82 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
-}
-.carta1 {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 1rem 0;
 }
 
 .carta {
-  /* font-family: 'Great Vibes', cursive; */
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  /* Tamaño adaptable */
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carta1 {
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  /* Tamaño adaptable */
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Secciones adicionales y extras */
+h3 ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+h3 li {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  /* Tamaño adaptable */
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .m-5 {
+    margin: 1rem;
+    /* Reducir márgenes en pantallas más pequeñas */
+  }
+
+  .p-25 {
+    padding: 1rem;
+    /* Ajustar padding */
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    /* Reducir padding horizontal */
+    padding-right: 1rem;
+  }
+
+  h1 {
+    padding: 0.5rem 0;
+  }
+
+  .carta {
+    text-align: left;
+    /* Mejor legibilidad en pantallas pequeñas */
+  }
+
+  .carta1 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  h3 li {
+    padding-left: 0.5rem;
+    /* Ajustar espaciado en listas */
+  }
+
+  .text-2xl {
+    font-size: 1.25rem;
+    /* Reducir tamaño base en móviles pequeños */
+  }
 }
 
 @media (max-width: 768px) {
@@ -268,12 +340,12 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .carta {
+  /* .carta {
     font-size: 1.2rem;
-  }
+  } */
 
- /* Mantener el diseño original para la mayoría de las celdas */
- .table-auto tbody tr {
+  /* Mantener el diseño original para la mayoría de las celdas */
+  .table-auto tbody tr {
     display: flex;
     flex-direction: column;
   }
@@ -285,16 +357,20 @@ h1 {
 
   /* Ajuste específico para "Personal de atención" */
   .personal-atencion {
-    white-space: normal; /* Permitir que el texto se envuelva */
-    min-width: 0; /* Evitar que fuerce un ancho excesivo */
-    max-width: 100%; /* Limitar al ancho del contenedor */
+    white-space: normal;
+    /* Permitir que el texto se envuelva */
+    min-width: 0;
+    /* Evitar que fuerce un ancho excesivo */
+    max-width: 100%;
+    /* Limitar al ancho del contenedor */
   }
 
   /* Ajuste específico para "Detalles del plato servido" */
   .detalles-plato {
     display: block;
     width: 100%;
-    white-space: normal; /* Permitir que el texto se envuelva */
+    white-space: normal;
+    /* Permitir que el texto se envuelva */
     min-width: 0;
     max-width: 100%;
   }
