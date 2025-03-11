@@ -39,7 +39,7 @@
             </tr>
             <tr>
               <td class="border px-4 py-2 text-left align-top min-w-[200px]">
-                <p class="text-justify italic font-bold">Bebidas en mesa con alcohol (2)</p>
+                <p class="text-justify italic font-bold">Bebidas en mesa con alcohol (1)</p>
                 <p class="text-justify italic">• Singani Casa Real</p>
                 <p class="text-justify italic">• Ron Carta Vieja - Abuelo</p>
                 <p class="text-justify italic">• Ron Carta Vieja- Havana</p>
