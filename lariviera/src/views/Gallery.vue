@@ -82,7 +82,7 @@ export default {
         {
           id: 1,
           title: "Boda Romántica",
-          description: "Ceremonia romantica en nuestro ambiente",
+          description: "Un ambiente encantador de fondo, con los novios posando con amor y elegancia para la cámara",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/IMG-20180926-WA0019_oiwq7y.jpg",
@@ -90,15 +90,15 @@ export default {
         {
           id: 2,
           title: "Quinceañera Elegante",
-          description: "Celebración de XV años",
+          description: "Una quinceañera radiante junto a su hermosa torta decorada, celebrando su día especial",
           category: "Quinceañeras",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082151/479487023_1142232350677854_5400312498081089072_n_xenukc.jpg",
         },
         {
           id: 3,
-          title: "Conferencia Tech",
-          description: "Evento de Salón",
+          title: "Presentacón de Salón",
+          description: "Amplio, moderno y adaptable, ideal para celebrar momentos especiales y grandes encuentros",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082087/IMG-20180829-WA0009_jq2hku.jpg",
@@ -107,30 +107,30 @@ export default {
           id: 4,
           title: "Gala Benéfica",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082471/WhatsApp_Image_2025-02-20_at_8.21.54_AM_ec1gwy.jpg",
         },
         {
           id: 5,
-          title: "Boda en la Playa",
-          description: "Ceremonia junto al mar",
+          title: "Boda Elegante",
+          description: "Mesa de bocadillos exquisitamente decorada, ofreciendo deliciosas opciones para los invitados",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082039/SaveClip.App_61781313_146143013216037_8931770470732746958_n_hjgptn.jpg",
         },
         {
           id: 6,
-          title: "Quinceañera Moderna",
-          description: "Celebración contemporánea",
+          title: "Quinceañera",
+          description: "Decoración iluminada y elegante, destacando la torta de la quinceañera en su gran día",
           category: "Quinceañeras",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1738349307/15Platinum_ysnz5h.jpg",
         },
         {
           id: 7,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "El lugar ideal para exposiciones y disertaciones con comodidad, tecnología y elegancia.",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082119/IMG-20180912-WA0017_td0q2q.jpg",
@@ -139,54 +139,54 @@ export default {
           id: 8,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082470/WhatsApp_Image_2025-02-20_at_8.21.54_AM_2_wkx9sn.jpg",
         },
         {
           id: 9,
-          title: "Boda 1",
-          description: "Ceremonia",
+          title: "Ceremonia de Matrimonio",
+          description: "Mesa de boda elegantemente decorada, con bocadillos listos para ser servidos",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082039/Captura_de_pantalla_2025-02-13_080929_kuxmjx.jpg",
         },
         {
           id: 10,
-          title: "Boda 2",
-          description: "Ceremonia",
+          title: "Ceremonia de Matrimonio",
+          description: "Mesas elegantes y bien decoradas para los invitados, rodeadas de un ambiente de boda sofisticado",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/SaveClip.App_38097070_2126975174229985_7285870495302418432_n_plscuu.jpg",
         },
         {
           id: 11,
-          title: "Boda 3",
-          description: "Ceremonia",
+          title: "Ceremonia de Matrimonio",
+          description: "Mesas decoradas con esmero, complementando la belleza del salón para una celebración de boda memorabl",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/IMG_20180719_145828_845_bnhnq5.jpg",
         },
         {
           id: 12,
-          title: "Boda  4",
-          description: "Ceremonia",
+          title: "Ceremonia de Matrimonio",
+          description: "Hermosas mesas de boda, con detalles decorativos que realzan la belleza del salón y crean un ambiente especial",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/SaveClip.App_37598889_265211824076485_479068567820566528_n_w4q6rt.jpg",
         },
         {
           id: 13,
-          title: "Boda  5",
-          description: "Ceremonia",
+          title: "Ceremonia de Matrimonio",
+          description: "Decoración mesas y salónMesas cuidadosamente decoradas para los invitados, en un salón lleno de elegancia y encanto para la boda",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/received_990762377781067_aahmr8.jpg",
         },
         {
           id: 14,
-          title: "Boda 6",
-          description: "Ceremonia",
+          title: "Ceremonia de Matrimonio",
+          description: "Mesa de la torta decorada con elegancia, en el centro de la celebración de boda",
           category: "Bodas",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082038/Captura_de_pantalla_2025-02-13_100655_ssepev.jpg",
@@ -194,7 +194,7 @@ export default {
         {
           id: 15,
           title: "Quinceañera",
-          description: "Celebración contemporánea1",
+          description: "Hermosa decoración iluminada con la torta de la quinceañera y una selección de deliciosos bocadillos",	
           category: "Quinceañeras",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082152/478990134_1141698550731234_4863281091107801233_n_sssouh.jpg",
@@ -202,7 +202,7 @@ export default {
         {
           id: 16,
           title: "Quinceañera",
-          description: "Celebración contemporánea2",
+          description: "Un elegante set con un hermoso sillón, perfecto para que la quinceañera capture recuerdos inolvidables",
           category: "Quinceañeras",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082149/SaveClip.App_81585373_160842461923771_8576567447727770476_n_fjhvjg.jpg",
@@ -210,7 +210,7 @@ export default {
         {
           id: 17,
           title: "Quinceañera",
-          description: "Celebración contemporánea3",
+          description: "El salón en todo su esplendor, decorado con una temática única y especial para la quinceañeraa",
           category: "Quinceañeras",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082148/SaveClip.App_81411677_2451636041752098_240112728907964506_n_djjjcy.jpg",
@@ -218,7 +218,7 @@ export default {
         {
           id: 18,
           title: "Quinceañera",
-          description: "Celebración contemporánea4",
+          description: "Mesa decorada con una variedad de deliciosos bocadillos, listos para disfrutar en la celebración",
           category: "Quinceañeras",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082148/IMG-20180717-WA0055_re11fz.jpg",
@@ -226,7 +226,7 @@ export default {
         {
           id: 19,
           title: "Quinceañera",
-          description: "Celebración contemporánea5",
+          description: "Un momento único en el salón, donde la quinceañera baila el vals con su papá, rodeados de elegancia y emoción",
           category: "Quinceañeras",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082147/479517910_1141548570746232_7919470612120866853_n_gzqujt.jpg",
@@ -235,7 +235,7 @@ export default {
           id: 20,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082469/WhatsApp_Image_2025-02-20_at_8.21.54_AM_1_eqlf7i.jpg",
         },
@@ -243,7 +243,7 @@ export default {
           id: 21,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082468/WhatsApp_Image_2025-02-20_at_8.21.53_AM_3_jctl2z.jpg",
         },
@@ -251,7 +251,7 @@ export default {
           id: 22,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082467/WhatsApp_Image_2025-02-20_at_8.21.53_AM_2_h2ta8u.jpg",
         },
@@ -259,7 +259,7 @@ export default {
           id: 23,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082466/WhatsApp_Image_2025-02-20_at_8.21.53_AM_1_gbn3ev.jpg",
         },
@@ -267,7 +267,7 @@ export default {
           id: 24,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082464/WhatsApp_Image_2025-02-20_at_8.21.52_AM_ifgsse.jpg",
         },
@@ -275,7 +275,7 @@ export default {
           id: 25,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082463/WhatsApp_Image_2025-02-20_at_8.21.52_AM_2_n9mdox.jpg",
         },
@@ -283,7 +283,7 @@ export default {
           id: 26,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082366/WhatsApp_Image_2025-02-20_at_8.21.52_AM_1_b6s94q.jpg",
         },
@@ -291,7 +291,7 @@ export default {
           id: 27,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082365/WhatsApp_Image_2025-02-20_at_8.21.51_AM_fa7bpp.jpg",
         },
@@ -299,7 +299,7 @@ export default {
           id: 28,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082364/WhatsApp_Image_2025-02-20_at_8.21.51_AM_1_xmahbo.jpg",
         },
@@ -307,118 +307,111 @@ export default {
           id: 29,
           title: "Fiesta de Graduación",
           description: "Demostración de Gatronomia",
-          category: "Gstronomia",
+          category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082363/WhatsApp_Image_2025-02-20_at_8.21.49_AM_vb6dqd.jpg",
         },
         {
           id: 30,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Un escenario elegante y glamuroso para desfiles de moda con modelos deslumbrante",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082125/IMG_20210417_212241_orqgbl.jpg",
         },
         {
           id: 31,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Arreglo floral para eventos",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082121/Captura_de_pantalla_2025-02-13_080720_yluxe0.jpg",
         },
         {
           id: 32,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Mesa de bocadillos",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082120/SaveClip.App_38194810_227566937927616_865769800901591040_n_kynn9k.jpg",
         },
         {
           id: 33,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Un espacio diseñado para experiencias musicales en vivo, con sonido e iluminación profesional",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082119/IMG-20180827-WA0020_aapitq.jpg",
         },
         {
           id: 34,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Pasarela ideal para exhibir belleza, estilo y las últimas tendencias de moda",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082119/IMG-20180912-WA0021_ef9jdw.jpg",
         },
-        {
-          id: 35,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
-          category: "Eventos",
-          url:
-            "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082119/IMG-20180912-WA0017_td0q2q.jpg",
-        },
+       
         {
           id: 36,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Un espacio diseñado para experiencias musicales en vivo, con sonido e iluminación profesional",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082118/IMG-20180827-WA0010_psttr5.jpg",
         },
         {
           id: 37,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Escenario ideal para conciertos en vivo, con excelente acústica y ambiente vibrante",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082118/Captura_de_pantalla_2025-02-13_100741_skdkw3.jpg",
         },
         {
           id: 38,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Espacio solemne y acogedor para la celebración de misas y encuentros religiosos",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082087/IMG_20210403_121803_317_zlmnxc.jpg",
         },
         {
           id: 39,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Set ideal para fotos, con iluminación, fondos y ambiente perfecto para capturas únicas",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082086/IMG-20180728-WA0002_wdflc2.jpg",
         },
         {
           id: 40,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Salón equipado para seminarios, con tecnología, comodidad y servicios para eventos profesionales",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082086/IMG_20180730_165127_330_vbnr4t.jpg",
         },
         {
           id: 41,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Un salón diseñado para ferias de negocios, networking y exhibiciones empresariales exitosas",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082085/IMG-20181011-WA0001_g4gyec.jpg",
         },
         {
           id: 42,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "Un espacio ideal para ferias de tatuajes, reunimos artistas, cultura e innovación",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082085/IMG-20180913-WA0017_vztdbd.jpg",
         },
         {
           id: 43,
-          title: "Summit Empresarial",
-          description: "Evento de Salón",
+          title: "Evento de Salón",
+          description: "El punto de encuentro para la cultura alternativa, arte, moda y expresión únic",
           category: "Eventos",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082085/IMG-20180913-WA0015_lvwmon.jpg",
