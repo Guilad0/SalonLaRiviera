@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "newagent-mikk",
+  "private_key_id": "572cc771a1761174308e414af9a099d454efc841",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3RVSSIKRCNylV\nWz63xYvLmusViMHDbKBz5AOS0bvAx7OSlO7QBBiG2zpAFxQUIVBrFzS4fQP5iOWU\n4wOLhMw5MBnL+HHZms90T1hGZ6AY1IKo1UdwGD7DjqL0kKclkMx5iBvBPKTiNKs2\nkD1eZE6Ot8NMIY0BUDGg/wpBZ8J19985xZKzxkm2l2xfJDa7kv8KEw88p2Ws6+F4\nAX2H11JGKi6sLzJFn7LlVqOVzbqjlzMMrfpSKDs4jsxUUkyLcTbjl7hzhU76eTCM\nvLqu6wMI/Eo3ftSWgTF+xm4WPiJfyErRxBwaJaL4kn/NW537AooPUMC+JpX5ifiW\nHeD8u/drAgMBAAECggEAL9VPkmgklwewqQ+MmghcSULg0pkEAY6LflPnvt0wxMsa\nikqG3hIDmMcFOA8N9YcQZzMCVpiCfhGF4ksx9KsvZkmwofTxOhtWxAOlhZKsTW7B\nv3ETGSWq0/2ZeH18sqhNRfcJT3EVk9itSytwaP+DJWq+9VLYa5xTp7KJKbL8JS+f\nHSUIOkQ/G5kMW0c953+mIBHMUPd+qxpwFgOWLTPTsDoSkval8XlETYvexMjvtmFW\nJyPMhEq6HSW2aSQsir22QDh/WmA9ljzKzgMvmbWCErNUOougpbTGrYIBm9qyzxDY\nhuhckMtr7vWp27ezczGn14iQFwVqNtq7nM0ru17nuQKBgQD/hFNxs5GnLTzx7mjT\nVlttXtBKZlycT9fCzavjDMOyiiwgR5RstgVuFTz7WWIGLRoo3NsSwmEn7JM36fqm\n0DKv7LvxGK/VRy3HDHKureucu/oLGyuGVMpfcVQFQ1OXDtRDNLWoJiFJl43zhFup\nITQ5VWpsKvHEaDnKXwW78YHFbwKBgQC3nglE02tJWqvC6uxuLNDBblGf7vl6y8xe\nPF3FsR7GipeKGsWm3PIcH0E9ESCcc7gLVQQaq6Qyl+joh1amPdZNKkWVHVQAc1Zp\nagyhcd9cHtyEb9M0nUHWZ0t665sq5C7HZXzpqVW9ixRPcOv5TCHulrkAuX9sKpWx\nQLxkjZcHxQKBgDNy5YpjadSLm1Xrd1f2b3paOP6CFeuzd/JVj2KsU0tD3xaw0wYA\nsJ81z42ctcwgkL/hmIrycLWlQQ9lIX8tNMePl1g4bE85gdIug3kAtAxfHT3XPrBR\nql4FZ7GXmOE1ry/JETrGUrWKup5p7Drl4KoatM8K5ptxkRFaiMELI+IpAoGBAJSs\nkOK6sU827IaqA4B+JxXIRq1SKY1FQRg4ltEAxmOKSoOXg9zFYABnSkKxAI/NnwMF\n9onF2vDgUcUd+Ioo3cGjba38jkzDFv/Jz6pVcr67emB9zyz1/B4ni1VfOkezdTEc\nutTTuMn9uBdO3rL/8yWlwuyURlmF7akVOrXMc7LlAoGBAInE3eXJ1dwibHROPa7F\nF+PRhSy0ZlJ8NLUHJw0Oosz9XymlzT9ho3of+F9+aH22Sf8XiNHYNeYVuN/CqztM\nt9ERzanRJXtDeVLOLmEOlyic7Ie9Blb1Pd+s2eJ0ZGDCfM8QVcgpAaJCp6ZSNmDk\n7HoCHN2eov6fedPSE0zSECsX\n-----END PRIVATE KEY-----\n",
+  "client_email": "lariviera-bot-172@newagent-mikk.iam.gserviceaccount.com",
+  "client_id": "104405125746526455237",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lariviera-bot-172%40newagent-mikk.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
