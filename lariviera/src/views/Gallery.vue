@@ -105,8 +105,8 @@ export default {
         },
         {
           id: 4,
-          title: "Gala Benéfica",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Sabores irresistibles en cada bocadillo, listos para disfrutar en este gran evento",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082471/WhatsApp_Image_2025-02-20_at_8.21.54_AM_ec1gwy.jpg",
@@ -137,8 +137,8 @@ export default {
         },
         {
           id: 8,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Variedad de bocadillos exquisitos, presentados con elegancia para una celebración especial",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082470/WhatsApp_Image_2025-02-20_at_8.21.54_AM_2_wkx9sn.jpg",
@@ -233,80 +233,80 @@ export default {
         },
         {
           id: 20,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Deliciosos bocadillos cuidadosamente preparados, perfectos para deleitar a los invitados",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082469/WhatsApp_Image_2025-02-20_at_8.21.54_AM_1_eqlf7i.jpg",
         },
         {
           id: 21,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Platos gourmet preparados con esmero, combinando presentación impecable y sabores exquisitos",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082468/WhatsApp_Image_2025-02-20_at_8.21.53_AM_3_jctl2z.jpg",
         },
         {
           id: 22,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Una experiencia culinaria única con platos gourmet que deleitan el paladar",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082467/WhatsApp_Image_2025-02-20_at_8.21.53_AM_2_h2ta8u.jpg",
         },
         {
           id: 23,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Variedad de complementos dulces y frutales, perfectos para personalizar tu postre",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082466/WhatsApp_Image_2025-02-20_at_8.21.53_AM_1_gbn3ev.jpg",
         },
         {
           id: 24,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Un festín visual con una selección de bocadillos, platos gourmet y exquisitos postres",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082464/WhatsApp_Image_2025-02-20_at_8.21.52_AM_ifgsse.jpg",
         },
         {
           id: 25,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Variedad gastronómica en un solo vistazo: bocadillos, platos gourmet y dulces irresistibles",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082463/WhatsApp_Image_2025-02-20_at_8.21.52_AM_2_n9mdox.jpg",
         },
         {
           id: 26,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Variedad de toppings para personalizar tu postre y disfrutar de sabores irresistibles",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082366/WhatsApp_Image_2025-02-20_at_8.21.52_AM_1_b6s94q.jpg",
         },
         {
           id: 27,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Postres exquisitos, cuidadosamente elaborados para endulzar cada momento de la celebración",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082365/WhatsApp_Image_2025-02-20_at_8.21.51_AM_fa7bpp.jpg",
         },
         {
           id: 28,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Sándwiches deliciosos y frescos, ideales para disfrutar en cualquier momento del evento",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082364/WhatsApp_Image_2025-02-20_at_8.21.51_AM_1_xmahbo.jpg",
         },
         {
           id: 29,
-          title: "Fiesta de Graduación",
-          description: "Demostración de Gatronomia",
+          title: "Gastronomia",
+          description: "Exquisita tabla de quesos, embutidos y frutas frescas, perfecta para degustar y compartir",
           category: "Gastronomia",
           url:
             "https://res.cloudinary.com/dughcx6qb/image/upload/v1740082363/WhatsApp_Image_2025-02-20_at_8.21.49_AM_vb6dqd.jpg",
