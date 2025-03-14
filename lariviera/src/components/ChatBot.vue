@@ -9,6 +9,7 @@
         height="430"
         class="chatbot-iframe"
         :src="iframeUrl"
+        sandbox="allow-scripts allow-same-origin allow-popups"
       ></iframe>
     </div>
 
