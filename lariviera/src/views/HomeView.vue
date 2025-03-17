@@ -7,6 +7,7 @@ import CardPaquetes from "@/components/CardPaquetes.vue";
 import CardEventos from "@/components/CardEventos.vue";
 import CardConferencias from "@/components/CardConferencias.vue";
 import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
+import Bot from "@/components/Bot.vue";
 </script>
 
 <template>
@@ -131,7 +132,8 @@ import WhatsAppComponent from "@/components/WhatsAppComponent.vue";
         </div>
       </section>
       <div>
-        <ChatBot />
+        <!-- <ChatBot /> -->
+        <Bot />
         <WhatsAppComponent />
       </div>
       <section id="contacto" class="py-20 px-6 bg-stone-900 text-white">
