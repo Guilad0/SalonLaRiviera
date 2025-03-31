@@ -13,6 +13,9 @@ import EventoPrivadoPlatinumView from '@/views/EventoPrivadoPlatinumView.vue'
 import OtrosView from '@/views/OtrosView.vue'
 import Gallery from '@/views/Gallery.vue'
 import Eventos from '@/views/EventosView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
+import PaqueteDetalleView from '@/views/PaqueteDetallesView.vue'
+import pdf from '@/views/pdf.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +30,17 @@ const router = createRouter({
       name: 'paquetes',
       component: PaquetesView 
     },
+    {
+      path: '/paquetes/:category/:slug',
+      name: 'PaqueteDetalle',
+      component: PaqueteDetalleView,
+      props: true
+    },
+    {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: NotFoundView
+  },
     {
       path: '/boda-estandar/:id',
       name: 'bodaEstandar',
@@ -88,6 +102,11 @@ const router = createRouter({
       path: '/eventos',
       name: 'Eventos',
       component: Eventos
+    },
+    {
+      path: '/pdf',
+      name: 'Pdf',
+      component: pdf
     }
 
 

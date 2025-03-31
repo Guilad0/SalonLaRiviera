@@ -85,6 +85,7 @@ import Bot from "@/components/Bot.vue";
           </div>
           <button
             class="px-3 py-2 bg-amber-500 hover:bg-amber-600 text-black font-medium rounded-lg transition-colors m-4"
+            to="/galeria"
           >
             <router-link to="/galeria" class="text-decoration-none text-black">
               Revisar Galeria
@@ -229,6 +230,7 @@ import Bot from "@/components/Bot.vue";
         </div>
       </section>
     </main>
+    <Footer />
   </div>
 </template>
 

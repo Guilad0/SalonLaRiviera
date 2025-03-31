@@ -11,8 +11,6 @@ import Footer from "./components/Footer.vue";
     <div class="flex-1 flex">
       <RouterView class="w-full" />
     </div>
-
-    <Footer />
   </div>
 </template>
 

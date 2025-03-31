@@ -1,8 +1,13 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
+import { useRoute } from "vue-router";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
+const route = useRoute();
+const isHomePage = computed(() => {
+  return route.path === "/" || route.path === "/home";
+});
 
 onMounted(() => {
   window.addEventListener("scroll", () => {
@@ -37,8 +42,7 @@ const toggleMenu = () => {
           >LA RIVIERA</router-link
         >
       </div>
-
-      <div class="hidden md:flex gap-8 text-white/90">
+      <div v-if="isHomePage" class="hidden md:flex gap-8 text-white/90">
         <a
           href="/"
           class="relative hover:text-white transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full text-decoration-none text-white"
@@ -71,7 +75,11 @@ const toggleMenu = () => {
           >Contacto</a
         >
       </div>
-      <button @click="toggleMenu" class="md:hidden text-white focus:outline-none">
+      <button
+        v-if="isHomePage"
+        @click="toggleMenu"
+        class="md:hidden text-white focus:outline-none"
+      >
         <svg
           v-if="!isMenuOpen"
           xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +110,7 @@ const toggleMenu = () => {
     </nav>
 
     <div
-      v-if="isMenuOpen"
+      v-if="isHomePage && isMenuOpen"
       class="fixed top-16 left-0 right-0 bg-black/70 backdrop-blur-md z-40 py-4 md:hidden flex flex-col items-center"
     >
       <a
