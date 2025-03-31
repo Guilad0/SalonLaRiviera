@@ -15,7 +15,7 @@ import Gallery from '@/views/Gallery.vue'
 import Eventos from '@/views/EventosView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import PaqueteDetalleView from '@/views/PaqueteDetallesView.vue'
-import pdf from '@/views/pdf.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -103,11 +103,7 @@ const router = createRouter({
       name: 'Eventos',
       component: Eventos
     },
-    {
-      path: '/pdf',
-      name: 'Pdf',
-      component: pdf
-    }
+    
 
 
   ]
